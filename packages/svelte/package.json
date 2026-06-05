@@ -1,0 +1,42 @@
+{
+  "name": "@kayforms/svelte",
+  "version": "0.1.0",
+  "description": "Svelte adapter for Kayforms reactive form library",
+  "type": "module",
+  "main": "./dist/index.cjs",
+  "module": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "import": {
+        "types": "./dist/index.d.ts",
+        "default": "./dist/index.js"
+      },
+      "require": {
+        "types": "./dist/index.d.cts",
+        "default": "./dist/index.cjs"
+      }
+    }
+  },
+  "files": ["dist"],
+  "scripts": {
+    "build": "tsup",
+    "dev": "tsup --watch",
+    "clean": "rimraf dist",
+    "typecheck": "tsc --noEmit"
+  },
+  "dependencies": {
+    "@kayforms/core": "workspace:*"
+  },
+  "peerDependencies": {
+    "svelte": "^3.0.0 || ^4.0.0 || ^5.0.0"
+  },
+  "devDependencies": {
+    "svelte": "^4.0.0",
+    "tsup": "^8.0.0",
+    "typescript": "^5.5.0",
+    "rimraf": "^5.0.0"
+  },
+  "sideEffects": false,
+  "license": "MIT"
+}
