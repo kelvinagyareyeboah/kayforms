@@ -1,9 +1,7 @@
   initialValues: { email: '', password: '' },
   fieldValidators: {
     email: [validators.required(), validators.email()],
-    password: [validators.required(), validators.minLength(8)],
-  },
-  onSubmit: (values) => console.log('Submit:', values),
+  nsole.log('Submit:', values),
 });
 
 const unbind = bindForm(document.querySelector('#login-form'), form);
