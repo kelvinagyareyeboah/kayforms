@@ -5,10 +5,7 @@ npm install @kayforms/core @kayforms/react
 ### React
 
 ```tsx
-import { useForm, useField, FormProvider, validators } from '@kayforms/react';
-
-function LoginForm() {
-  const { store, handleSubmit, valid, submitting } = useForm({
+idleSubmit, valid, submitting } = useForm({
     initialValues: { email: '', password: '' },
     fieldValidators: {
       email: [validators.required(), validators.email()],
