@@ -9,9 +9,7 @@
 
 ---
 
-## Cross-form signals
-
-Forms can react to each other through the registry:
+#ms can react to each other through the registry:
 
 ```ts
 import { createForm, createComputed, getFormRegistry } from '@kayforms/core';
