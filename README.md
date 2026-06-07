@@ -3,9 +3,7 @@
      
 function EmailField() {
   consil" placeholder="Email" />
-      {touched && error && <span className="error">{error}</span>}
-    </div>
-  );
+      {touched && error && <span className="e
 }
 ```
 
