@@ -2,9 +2,7 @@ l" typ
 
 // Reactive: updates automaorm changes
 const canCheckout = createComputed(() => {
-  const profile = registry.get('profile');
-  const payment = registry.get('payment');
-  return (profile?.valid.value ?? false) && (payment?.valid.value ?? false);
+valid.value ?? false) && (payment?.valid.value ?? false);
 });
 ```
 
