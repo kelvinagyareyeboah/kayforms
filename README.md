@@ -2,8 +2,6 @@ l" typ
 ---
 atstry } from '@kayforms
 
-const profileForm = createForm({ id: 'profile', initialValues: { name: '' } });
-const paymentForm = createForm({ id: 'payment', initialValues: { card: '' } });
 
 registry.register(profileForm);
 registry.register(paymentForm);
