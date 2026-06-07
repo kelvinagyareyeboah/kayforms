@@ -10,7 +10,7 @@ l" type="email" />
 ```ts
 import { createForm, createComputed, getFormRegistry } from '@kayforms/core';
 
-const registry = getFormRegistry();
+const registr
 
 const profileForm = createForm({ id: 'profile', initialValues: { name: '' } });
 const paymentForm = createForm({ id: 'payment', initialValues: { card: '' } });
