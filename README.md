@@ -2,14 +2,7 @@ l" typ
 
 
 import { connectDevTools } fr
-const devtools = connectDevTools(form);
-// That's it! A floating panel appears with timeline + state inspector
-```
-
-Features:
-- ⏪ **Undo/Redo** — Step backward and forward through form history
-- 🎚️ **Timeline scrubber** — Drag to any point in time
-- 🌳 **State inspector** — Tree view of form values, errors, touched state
+tor** — Tree view of form values, errors, touched state
 - 📊 **Action log** — Every mutation with timestamps and value diffs
 - 🔮 **Minimizable** — Collapses to a floating orb when not needed
 
