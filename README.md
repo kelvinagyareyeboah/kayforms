@@ -1,16 +1,4 @@
-
-import { createSignal, createComputed, createEffect, batch } from '@kayforms/core';
-
-const count = createSignal(0);
-const doubled = createComputed(() => count.value * 2);
-
-createEffect(() => {
-  console.log(`Count: ${count.value}, Doubled: ${doubled.value}`);
-});
-
-batch(() => {
-  count.set(5);
-  count.set(10); // Only one notification
+otification
 });
 ```
 
