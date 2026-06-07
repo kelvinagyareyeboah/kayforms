@@ -1,7 +1,5 @@
 l" type="email" />
-  <input name="password" type="password" />
-  <button type="submit">Login</button>
-</form>
+
 ```
 
 ---
