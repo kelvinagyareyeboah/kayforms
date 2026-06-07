@@ -1,5 +1,5 @@
 
-npm install @kayforms/c
+npm in/c
 
 ```tsx
 idleSubmit, valid, submitting } = useForm({
