@@ -4,8 +4,7 @@
 - **Formik** → controlled but slow (re-renders don't exist elsewhere
 
 - 🔄 **Cross-form signals** – Form A can react to Form B (multi-step checkout, profile+payment)
-- ⏰ **Time-travel debugging** – Floating DevTools panel shows every keystroke, rewind/play changes
-- 🧩 **Framework agnostic** – One core, adapters for everything
+- ⏰ **Time** – One core, adapters for everything
 - 🧠 **Smart batching** – Sync validations immediate, async debounced, derived fields lazy
 - 📦 **Tiny** – <3kb, zero dependencies
 
