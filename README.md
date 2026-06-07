@@ -1,8 +1,7 @@
 
 npm in/c
 
-```tsx
-idleSubmit, valid, submitting } = useForm({
+```tsx} = useForm({
     initialValues: { email: '', password: '' },
     fieldValidators: {
       email: [validators.required(), vali
