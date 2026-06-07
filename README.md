@@ -3,8 +3,7 @@
 
 
 ## Why this exists
-
-Every form library makes you choose:
+ary makes you choose:
 
 - **React Hook Form** → fast but uncontrolled (can't react to values easily)
 - **Formik** → controlled but slow (re-renders everything)
