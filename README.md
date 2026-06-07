@@ -8,8 +8,7 @@ valid.value ?? false) && (payment?.valid.value
 
 
 ```ts
-import { connectDevTools } from '@kayforms/devtools';
-
+import { connectDevTools } fr
 const devtools = connectDevTools(form);
 // That's it! A floating panel appears with timeline + state inspector
 ```
