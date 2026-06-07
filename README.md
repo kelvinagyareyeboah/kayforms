@@ -1,5 +1,3 @@
-
-t form = createForm({
   initialValues: { email: '', password: '' },
   fieldValidators: {
     email: [validators.required(), validators.email()],
