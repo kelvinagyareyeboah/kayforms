@@ -2,9 +2,7 @@
 
 - **React Hook Form** → fast but uncontrolled (can't react to values easily)
 - **Formik** → controlled but slow (re-renders everything)
-- **Angular forms** → powerful but fr
-**Kayforms** eliminates the tradeoff. Built on signals, it updates _only what changes_ — controlled and fast.
-
+- **Angular forms*
 ---
 
 ## Features that don't exist elsewhere
