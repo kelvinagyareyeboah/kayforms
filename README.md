@@ -1,13 +1,6 @@
 l" typ
 
-// Reactive: updates automaorm changes
-const canCheckout = createComputed(() => {
-valid.value ?? false) && (payment?.valid.value
 
-## Time-travel debugging
-
-
-```ts
 import { connectDevTools } fr
 const devtools = connectDevTools(form);
 // That's it! A floating panel appears with timeline + state inspector
