@@ -4,10 +4,7 @@
         <EmailField />
         <PasswordField />
         <button disabled={!valid || submitting}>Login</button>
-      </form>
-    </FormProvider>
-  );
-}
+      
 
 function EmailField() {
   const { inputProps, error, touched } = useField('email');
