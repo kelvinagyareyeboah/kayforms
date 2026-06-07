@@ -6,7 +6,6 @@ valid.value ?? false) && (payment?.valid.value
 
 ## Time-travel debugging
 
-One line to enable:
 
 ```ts
 import { connectDevTools } from '@kayforms/devtools';
