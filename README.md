@@ -6,8 +6,7 @@ l" type="email" />
 
 ---
 
-#ms can react to each other through the registry:
-
+#ms can react to each ot
 ```ts
 import { createForm, createComputed, getFormRegistry } from '@kayforms/core';
 
