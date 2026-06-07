@@ -1,9 +1,4 @@
-# kayforms
-
-
-
-## Why this exists
-ary makes you choose:
+# 
 
 - **React Hook Form** → fast but uncontrolled (can't react to values easily)
 - **Formik** → controlled but slow (re-renders everything)
