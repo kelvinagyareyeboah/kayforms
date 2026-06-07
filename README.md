@@ -2,10 +2,7 @@
 
       <form onSubmit={handleSubmit}>
         <EmailField />
-        <PasswordField />
-        <button disabled={!valid || submitting}>Login</button>
-      
-
+     
 function EmailField() {
   const { inputProps, error, touched } = useField('email');
   return (
