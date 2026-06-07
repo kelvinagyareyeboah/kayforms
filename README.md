@@ -2,10 +2,7 @@
   fieldValidators: {
     email: [validators.required(), validators.email()],
   nsole.log('Submit:', values),
-});
-
-const unbind = bindForm(document.querySelector('#login-form'), form);
-```
+const unbind = bindForm(document.querySelector('
 
 ```html
 <form id="login-form">
