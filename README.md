@@ -1,13 +1,4 @@
 
-
-
----
-
-## Signals API
-
-Kayforms is built on its own signal engine. You can use it directly:
-
-```ts
 import { createSignal, createComputed, createEffect, batch } from '@kayforms/core';
 
 const count = createSignal(0);
