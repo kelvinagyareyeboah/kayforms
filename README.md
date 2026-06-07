@@ -1,10 +1,7 @@
 # 
 
 - **React Hook Form** → fast but uncontrolled (can't react to values easily)
-- **Formik** → controlled but slow (re-renders don't exist elsewhere
-
-- 🔄 **Cross-form signals** – Form A can react to Form B (multi-step checkout, profile+payment)
-- ⏰ **Time** – One core, adapters for everything
+-, adapters for everything
 - 🧠 **Smart batching** – Sync validations immediate, async debounced, derived fields lazy
 - 📦 **Tiny** – <3kb, zero dependencies
 
