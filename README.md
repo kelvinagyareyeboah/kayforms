@@ -1,12 +1,6 @@
 # kayforms
 
-### The first framework-agnostic reactive form library with time-travel debugging.
 
-**Size:** <3kb gzipped
-**Speed:** 60fps on 1000+ fields
-**Scope:** React, Vue, Solid, Svelte, Angular, Vanilla JS
-
----
 
 ## Why this exists
 
