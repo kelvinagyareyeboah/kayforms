@@ -1,7 +1,6 @@
 
 npm in/c
 itialValues: { email: '', password: '' },
-    fieldValidators: {
       email: [validators.required(), vali
       password: [validators.required(), validators.minLength(8)],
     },
