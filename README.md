@@ -1,8 +1,5 @@
 
-{touched && error && <span className="e
- from '@kayforms/core';
-
-const form = createForm({
+t form = createForm({
   initialValues: { email: '', password: '' },
   fieldValidators: {
     email: [validators.required(), validators.email()],
