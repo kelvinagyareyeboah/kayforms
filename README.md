@@ -1,16 +1,4 @@
-l" typ
 
-
-import { connectDevTools } fr
-tor** — Tree view of form values, errors, touched state
-- 📊 **Action log** — Every mutation with timestamps and value diffs
-- 🔮 **Minimizable** — Collapses to a floating orb when not needed
-
----
-
-## Schema validation (Zod, Yup, Valibot)
-
-```ts
 import { createForm, withSchema } from '@kayforms/core';
 import { z } from 'zod';
 
