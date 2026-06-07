@@ -1,8 +1,5 @@
 
-npm install @kayforms/core @kayforms/react
-```
-
-### React
+npm install @kayforms/c
 
 ```tsx
 idleSubmit, valid, submitting } = useForm({
