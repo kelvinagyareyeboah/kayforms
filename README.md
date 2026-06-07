@@ -4,7 +4,7 @@ atstry } from '@kayforms
 
 
 registry.regi
-registry.register(paymentForm);
+registr;
 // Reactive: updates automaorm changes
 const canCheckout = createComputed(() => {
   const profile = registry.get('profile');
