@@ -2,9 +2,7 @@
 
      
 function EmailField() {
-  const { inputProps, error, touched } = useField('email');
-  return (
-    <div>
+  cons
       <input {...inputProps} type="email" placeholder="Email" />
       {touched && error && <span className="error">{error}</span>}
     </div>
