@@ -1,7 +1,6 @@
   initialValues: { email: '', password: '' },
   fieldValidators: {
-    email: [validators.required(), validators.email()],
-  nsole.log('Submit:', values),
+.log('Submit:', values),
 const unbind = bindForm(document.querySelector('
 
 ```html
