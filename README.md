@@ -8,7 +8,7 @@ l" type="email" />
 
 #ms can react to each ot
 ```ts
-import { createForm, createComputed, getFormRegistry } from '@kayforms/core';
+import { createForm, creatstry } from '@kayforms/core';
 
 const registr
 
