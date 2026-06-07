@@ -1,9 +1,5 @@
 l" typ
----
-atstry } from '@kayforms
 
-
-registr;
 // Reactive: updates automaorm changes
 const canCheckout = createComputed(() => {
   const profile = registry.get('profile');
