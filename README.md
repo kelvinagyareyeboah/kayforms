@@ -1,9 +1,5 @@
 
-
-     
-function EmailField() {
-  consil" placeholder="Email" />
-      {touched && error && <span className="e
+{touched && error && <span className="e
 }
 ```
 
