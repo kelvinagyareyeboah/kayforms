@@ -3,7 +3,6 @@ l" typ
 atstry } from '@kayforms
 
 
-registry.regi
 registr;
 // Reactive: updates automaorm changes
 const canCheckout = createComputed(() => {
