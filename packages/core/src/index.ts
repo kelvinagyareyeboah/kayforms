@@ -60,3 +60,12 @@ export {
   type DevToolsConfig,
   type HistoryEntry,
 } from "./devtools";
+
+// Time-Travel
+export {
+  enableTimeTravel,
+  type TimeTravelEntry,
+  type TimeTravelOptions,
+  type TimeTravelMethods,
+} from "./time-travel";
+

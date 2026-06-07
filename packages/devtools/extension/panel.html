@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>KayForms Time-Travel Debugger</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="panel.css">
+</head>
+<body>
+  <div class="panel-container">
+    <!-- Top Header -->
+    <header class="panel-header">
+      <div class="header-left">
+        <div class="logo">K</div>
+        <div class="brand">
+          <h1>KayForms</h1>
+          <span class="subtitle">Time-Travel Debugger</span>
+        </div>
+      </div>
+      
+      <div class="header-right">
+        <!-- Form selector -->
+        <div class="control-group">
+          <label for="form-select">Form ID:</label>
+          <select id="form-select">
+            <option value="">-- No Active Forms --</option>
+          </select>
+        </div>
+        
+        <!-- JSON actions -->
+        <button id="btn-export" title="Export History as JSON" class="btn btn-secondary">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4M17 8l-5-5-5 5M12 3v12"/></svg>
+          Export
+        </button>
+        <button id="btn-import" title="Import History from JSON" class="btn btn-secondary">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4M7 10l5 5 5-5M12 15V3"/></svg>
+          Import
+        </button>
+        <input type="file" id="import-file" accept=".json" style="display: none;">
+      </div>
+    </header>
+
+    <!-- Scrubber and Controls Card -->
+    <section class="controls-card">
+      <div class="playback-controls">
+        <button id="btn-rewind" title="Rewind to start" class="btn btn-icon">
+          ⏮
+        </button>
+        <button id="btn-play-pause" title="Play history" class="btn btn-icon btn-accent">
+          ▶
+        </button>
+        <button id="btn-clear" title="Clear form history" class="btn btn-icon btn-danger">
+          🗑
+        </button>
+      </div>
+      
+      <div class="slider-container">
+        <input type="range" id="time-slider" min="0" max="0" value="0" disabled>
+        <div class="slider-ticks" id="slider-ticks"></div>
+      </div>
+
+      <div class="step-counter">
+        <span class="current-step" id="current-step-label">0</span>
+        <span class="step-separator">/</span>
+        <span class="total-steps" id="total-steps-label">0</span>
+      </div>
+    </section>
+
+    <!-- Workspace split view -->
+    <div class="split-view">
+      <!-- Left side: Timeline Entries -->
+      <aside class="timeline-pane">
+        <div class="pane-header">
+          <h2>Timeline</h2>
+          <span class="badge" id="entries-count-badge">0 entries</span>
+        </div>
+        <div class="timeline-list" id="timeline-list">
+          <div class="empty-state">No form state changes recorded yet. Interacted fields will show up here.</div>
+        </div>
+      </aside>
+
+      <!-- Right side: State Inspector -->
+      <main class="inspector-pane">
+        <div class="pane-header">
+          <h2>State Snapshot</h2>
+          <span class="badge badge-success" id="valid-badge">Valid</span>
+        </div>
+        
+        <div class="inspector-content">
+          <div class="inspector-section">
+            <h3 class="section-title">Values</h3>
+            <pre class="json-viewer" id="json-values">{}</pre>
+          </div>
+          
+          <div class="inspector-section">
+            <h3 class="section-title">Validation Errors</h3>
+            <pre class="json-viewer" id="json-errors">{}</pre>
+          </div>
+        </div>
+      </main>
+    </div>
+  </div>
+
+  <script src="panel.js"></script>
+</body>
+</html>

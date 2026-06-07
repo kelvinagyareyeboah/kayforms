@@ -91,6 +91,10 @@ export interface FormStore<T extends Record<string, unknown> = Record<string, un
 
   /** Access the internal scheduler */
   readonly _scheduler: Scheduler;
+  /** Internal map of field nodes (for DevTools/time-travel) */
+  readonly _fields?: Map<string, FieldNode<any>>;
+  /** Internal form-level errors signal (for DevTools/time-travel) */
+  readonly _formLevelErrors?: Signal<Record<string, string | undefined>>;
   /** DevTools action listener */
   _onAction?: (
     action: string,
@@ -332,6 +336,8 @@ export function createForm<T extends Record<string, unknown>>(
     submitting,
     validating,
     _scheduler: scheduler,
+    _fields: fieldNodes,
+    _formLevelErrors: formLevelErrors,
 
     get _onAction() {
       return _onAction;
