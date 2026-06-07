@@ -2,11 +2,7 @@ l" typ
 
 // Reactive: updates automaorm changes
 const canCheckout = createComputed(() => {
-valid.value ?? false) && (payment?.valid.value ?? false);
-});
-```
-
----
+valid.value ?? false) && (payment?.valid.value
 
 ## Time-travel debugging
 
