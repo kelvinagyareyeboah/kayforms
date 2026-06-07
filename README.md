@@ -1,9 +1,6 @@
 
 {touched && error && <span className="e
-}
-```
 
-```ts
 import { createForm, validators } from '@kayforms/core';
 import { bindForm } from '@kayforms/vanilla';
 
