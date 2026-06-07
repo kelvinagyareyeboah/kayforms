@@ -1,7 +1,5 @@
 
-npm in/c
-itialValues: { email: '', password: '' },
-      emvalidators.required(), validators.minLe
+lidators.required(), validators.minLe
     onSubmit: as
     },
   });
