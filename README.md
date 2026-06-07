@@ -1,7 +1,4 @@
-  initialValues: { email: '', password: '' },
-
-```htmln-form">
-  <input name="email" type="email" />
+l" type="email" />
   <input name="password" type="password" />
   <button type="submit">Login</button>
 </form>
