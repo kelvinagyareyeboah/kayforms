@@ -5,7 +5,7 @@ npm install @kayforms/c
 idleSubmit, valid, submitting } = useForm({
     initialValues: { email: '', password: '' },
     fieldValidators: {
-      email: [validators.required(), validators.email()],
+      email: [validators.required(), vali
       password: [validators.required(), validators.minLength(8)],
     },
     onSubmit: async (values) => {
