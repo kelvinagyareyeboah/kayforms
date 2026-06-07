@@ -1,17 +1,5 @@
 
-import { createForm, withSchema } from '@kayforms/core';
-import { z } from 'zod';
 
-const schema = z.object({
-  email: z.string().email(),
-  password: z.string().min(8),
-});
-
-const form = createForm({
-  initialValues: { email: '', password: '' },
-  validate: withSchema(schema),
-});
-```
 
 ---
 
