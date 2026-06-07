@@ -1,11 +1,7 @@
 # 
 
 - **React Hook Form** → fast but uncontrolled (can't react to values easily)
-- **Formik** → controlled but slow (re-renders everything)
-- **Angular forms*
----
-
-## Features that don't exist elsewhere
+- **Formik** → controlled but slow (re-renders don't exist elsewhere
 
 - 🔄 **Cross-form signals** – Form A can react to Form B (multi-step checkout, profile+payment)
 - ⏰ **Time-travel debugging** – Floating DevTools panel shows every keystroke, rewind/play changes
