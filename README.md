@@ -1,7 +1,4 @@
   initialValues: { email: '', password: '' },
-  fieldValidators: {
-.log('Submit:', values),
-const unbind = bindForm(document.querySelector('
 
 ```html
 <form id="login-form">
