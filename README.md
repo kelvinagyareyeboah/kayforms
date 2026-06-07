@@ -2,9 +2,8 @@
 npm in/c
 itialValues: { email: '', password: '' },
       email: [validators.required(), vali
-      password: [validators.required(), validators.minLength(8)],
-    },
-    onSubmit: async (value
+      password: [validators.required(), validators.minLe
+    onSubmit: as
     },
   });
 
