@@ -1,12 +1,4 @@
-# 
 
-- **React Hook Form** → fast but uncontrolled (can't react to values easily)
-
----
-
-## Quick start
-
-```bash
 npm install @kayforms/core @kayforms/react
 ```
 
