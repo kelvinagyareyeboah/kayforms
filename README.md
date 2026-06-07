@@ -1,8 +1,7 @@
 
 npm in/c
 itialValues: { email: '', password: '' },
-      email: [validators.required(), vali
-      password: [validators.required(), validators.minLe
+      emvalidators.required(), validators.minLe
     onSubmit: as
     },
   });
