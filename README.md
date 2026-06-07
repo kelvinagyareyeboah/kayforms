@@ -2,8 +2,7 @@
 
      
 function EmailField() {
-  cons
-      <input {...inputProps} type="email" placeholder="Email" />
+  consil" placeholder="Email" />
       {touched && error && <span className="error">{error}</span>}
     </div>
   );
