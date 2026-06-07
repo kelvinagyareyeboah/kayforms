@@ -1,7 +1,5 @@
 
 
-      <form onSubmit={handleSubmit}>
-        <EmailField />
      
 function EmailField() {
   const { inputProps, error, touched } = useField('email');
