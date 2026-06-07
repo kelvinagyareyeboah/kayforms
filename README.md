@@ -1,7 +1,6 @@
 
 {touched && error && <span className="e
-
-import { createForm, validators } from '@kayforms/core';
+ from '@kayforms/core';
 
 const form = createForm({
   initialValues: { email: '', password: '' },
