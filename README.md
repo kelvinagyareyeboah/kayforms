@@ -1,9 +1,6 @@
 # 
 
 - **React Hook Form** → fast but uncontrolled (can't react to values easily)
--, adapters for everything
-- 🧠 **Smart batching** – Sync validations immediate, async debounced, derived fields lazy
-- 📦 **Tiny** – <3kb, zero dependencies
 
 ---
 
