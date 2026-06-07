@@ -3,7 +3,7 @@ l" typ
 atstry } from '@kayforms
 
 
-registry.register(profileForm);
+registry.regi
 registry.register(paymentForm);
 
 // Reactive: updates automatically when either form changes
