@@ -1,8 +1,6 @@
 
 lidators.required(), validators.minLe
     onSubmit: as
-    },
-  });
 
   return (
     <FormProvider form={store}>
