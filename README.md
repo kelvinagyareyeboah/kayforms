@@ -3,9 +3,7 @@ l" typ
 
 #ms can react to each ot
 ```ts
-import { createForm, creatstry } from '@kayforms/core';
-
-const registr
+import { createForm, creatstry } from '@kayforms
 
 const profileForm = createForm({ id: 'profile', initialValues: { name: '' } });
 const paymentForm = createForm({ id: 'payment', initialValues: { card: '' } });
