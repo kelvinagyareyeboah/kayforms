@@ -2,8 +2,7 @@
 
   remail.error && <span>{form.emaind} type="password" placeholder="Password" />
       {form.password.error && <span>{form.password.error}</span>}
-      
-      <button type="su
+    type="su
     </form>
   );
 }
