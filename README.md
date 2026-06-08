@@ -1,13 +1,5 @@
 5fps	15fps
-KayForms maintains 60fps even at 1000+ fields thanks to signal-based fine-grained reactivity.
-
-View full benchmarks →
-
-🤝 Contributing
-KayForms is open source and welcomes contributions!
-
-Ways to contribute
-🐛 Report bugs (export timeline and attach it!)
+KayForms attach it!)
 
 💡 Suggest features
 
