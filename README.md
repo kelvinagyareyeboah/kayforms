@@ -1,9 +1,4 @@
-
-With Time-Travel Enabled
-rm = createForm({ email: field(''), password: field('') });
-  
-> form.redo();
-  const handleExport = () => console.log(form.exportHistory());
+port = () => console.log(form.exportHistory());
   
   // ... rest of your component
 }
