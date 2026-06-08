@@ -1,15 +1,4 @@
-
-
-Or build from source: cd devtools && npm run build
-
-📊 Performance
-Benchmarked on a MacBook Pro M1 (Chrome 120):
-
-Number of fields	KayForms	React Hook Form	Formik
-10 fields	60fps	60fps	55fps
-100 fields	60fps	58fps	42fps
-500 fields	60fps	52fps	28fps
-1000 fields	60fps	45fps	15fps
+5fps	15fps
 KayForms maintains 60fps even at 1000+ fields thanks to signal-based fine-grained reactivity.
 
 View full benchmarks →
