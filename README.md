@@ -1,9 +1,4 @@
 
-
-  remail.error && <span>{form.emaind} type="password" placeholder="Password" />
-
-  );
-}
 With Time-Travel Enabled
 tsx
 import { createForm, field, enableTimeTravel } from 'kayforms/react';
