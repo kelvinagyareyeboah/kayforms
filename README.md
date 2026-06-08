@@ -1,6 +1,4 @@
 
-| Feature | KayForms | React Hook Form | Formik |
-|---------|----------|----
 | Fine-grained re-renders | ✅ | ⚠️ Uncontrolled only | ❌ |
 | Cross-form signals | ✅ | ❌ | ❌ |
 | Bundle size | **<3KB** | 9.2KB | 12KB |
