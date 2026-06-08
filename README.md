@@ -4,7 +4,8 @@ Fine-grained signal-based rollbacks. Transaction-batched state jumps. Async vali
 
 ### W
 Every keystroke → Recorded
-Every validation error → Timestamped
+Every validati
+
 Every async API call → Logged
 
 Then you can:
