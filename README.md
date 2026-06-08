@@ -3,10 +3,7 @@ Bas
 For', [minLength(8)]),
   });
 
-  return (
-    <form onSubmit={form.handleSubmit}>
-      <input {...form.email.bind} placeholder="Email" />
-      {form.email.error && <span>{form.email.error}</span>}
+  remail.error && <span>{form.email.error}</span>}
       
       <input {...form.password.bind} type="password" placeholder="Password" />
       {form.password.error && <span>{form.password.error}</span>}
