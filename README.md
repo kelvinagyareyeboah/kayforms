@@ -1,6 +1,6 @@
 
 
-Fine-grained signal-based rollbacks. Transaction-batched state jumps. Async validation logging with timestamps. Full JSON export/import. Chrome DevTools panel. **All in <1KB.**
+Fine-grained signal-based rollbacks. Transaction-batched state jumps. Async validation logging with timestamps. Full JSON export/import. Chrome 
 
 ### W
 Every keystroke → Recorded
