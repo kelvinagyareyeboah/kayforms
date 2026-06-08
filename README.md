@@ -2,9 +2,7 @@
 With Time-Travel Enabled
 rm = createForm({ email: field(''), password: field('') });
   
-  // Enable time-travel debugging
-  enableTimeTravel(form, { maxHistory: 100 });
-  
+  // E
   // Now you have undo/redo
   const handleUndo = () => form.undo();
   const handleRedo = () => form.redo();
