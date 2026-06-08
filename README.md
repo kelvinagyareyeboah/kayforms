@@ -1,18 +1,5 @@
 
 
-
-🔧 DevTools Extension
-KayForms ships with a Chrome DevTools extension for time-travel debugging.
-
-Features
-📜 Timeline slider to scrub through history
-
-🎮 Play/pause/rewind/fast-forward buttons
-
-📝 List of every change with timestamps
-
-📤 Export history as JSON
-
 📥 Import JSON to replay bugs
 
 Installation
