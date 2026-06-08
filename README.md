@@ -4,7 +4,7 @@
 
 **KayForms** is a JavaScript library for framework-agnostic reactive forms with **time-travel debugging**. Built on signals. Under 3KB. Runs at 60fps with 1000+ fields.
 
-[![npm version](https://img.shields.io/npm/v/kayforms.svg)](https://www.npmjs.com/package/kayforms)
+[![npm version](https:/o/npm/v/kayforms.svg)](https://www.npmjs.com/package/kayforms)
 [![bundle size](https://img.shields.io/bundlephobia/minzip/kayforms)](https://bundlephobia.com/package/kayforms)
 [![license](https://img.shields.io/npm/l/kayforms.svg)](https://github.com/yourusername/kayforms/blob/main/LICENSE)
 [![TypeScript](https://img.shields.io/badge/TypeScript-Ready-blue)](https://www.typescriptlang.org/)
