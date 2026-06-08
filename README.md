@@ -1,11 +1,4 @@
-5fps	15fps
-KayForms attach it!)
 
-💡 Suggest features
-
-📝 Improve documentation
-
-🔧 Submit pull requests
 
 Development setup
 bash
