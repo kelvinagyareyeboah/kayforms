@@ -2,8 +2,6 @@ pm/v/kayforms.svg)](https://www.npmjs.com/package/kayforms)
 [![bundle size](https://img.shields.io/bundlephobia/minzip/kayforms)](https://bundlephobia.com/package/kayforms)
 
 
-## ✨ Why KayForms?
-
 Every form library makes you choose: **speed** or **control**.
 
 KayForms gives you both.
