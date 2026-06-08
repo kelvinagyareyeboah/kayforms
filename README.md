@@ -1,13 +1,6 @@
 
 
-}, {
-  validate: (values) => {
-    if (values.startDate > values.endDate) {
-      return { endDate: 'End date must be after start date' };
-    }
-    return {};
-  }
-});
+
 🔧 DevTools Extension
 KayForms ships with a Chrome DevTools extension for time-travel debugging.
 
