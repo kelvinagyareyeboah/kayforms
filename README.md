@@ -1,9 +1,6 @@
 
 
 
-### W
-Every keystroke → Recorded
-Every validati
 
 Every async API call →
 → Rewind 50 steps in one click
