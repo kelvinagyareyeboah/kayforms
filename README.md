@@ -1,9 +1,5 @@
 
 
-text
-
----
- Quick Start
 
 ### Installation
 
