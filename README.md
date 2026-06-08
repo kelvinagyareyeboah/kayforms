@@ -1,13 +1,7 @@
 
 import { required, email, minLength, maxLength, pattern, match } from 'kayforms';
 
-const form = createForm({
-  email: field('', [required(), email()]),
-  password: field('', [minLength(8), maxLength(100)]),
-  confirm: field('', [match('password')]),
-});
-Custom Validators
-typescript
+
 const uniqueUsername = async (value: string) => {
   const res = await fetch(`/api/check/${value}`);
   const exists = await res.json();
