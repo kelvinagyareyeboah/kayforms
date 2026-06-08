@@ -1,6 +1,4 @@
 
-| Fine-grained re-renders | ✅ | ⚠️ Uncontrolled only | ❌ |
-| Cross-form signals | ✅ | ❌
 
 ---
 
