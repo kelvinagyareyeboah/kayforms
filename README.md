@@ -24,7 +24,7 @@
 
 </div>
 
-![Kayforms](kayforms.png)
+![Kayforms](kayforms.jpg)
 ---
 
 ## 🤔 Why does this exist?
