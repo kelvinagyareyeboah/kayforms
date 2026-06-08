@@ -1,7 +1,5 @@
 
 
-This is the feature that makes KayForms different.
-
 ### For the non-technical person:
 It's like a **dashcam for your forms**. Records every keystroke, every error, everything. Then you can rewind and watch exactly what broke.
 
