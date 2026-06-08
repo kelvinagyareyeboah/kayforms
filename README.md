@@ -1,6 +1,4 @@
-
-React	kayforms/react	✅ Stable
-Vue	kayforms/vue	✅ Stable
+e
 Solid	kayforms/solid	✅ Stable
 /svelte	🚧 Coming soon
 Angular	kayforms/angular	🚧 Coming soon
