@@ -1,7 +1,6 @@
 led)
-typescript
-form.undo()            // Go back one step
-form.redo()            // Go forward one step
+typrward one step
+
 form.jumpTo(index)     // Jump to specific history index
 form.clearHistory()    // Clear all history
 form.getHistory()      // Get full history array
