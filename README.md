@@ -1,7 +1,4 @@
-led)
-typ     // Get full history array
-fo
-typescript
+
 import { required, email, minLength, maxLength, pattern, match } from 'kayforms';
 
 const form = createForm({
