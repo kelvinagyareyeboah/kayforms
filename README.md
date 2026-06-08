@@ -2,8 +2,7 @@
 React	kayforms/react	✅ Stable
 Vue	kayforms/vue	✅ Stable
 Solid	kayforms/solid	✅ Stable
-Vanilla JS	kayforms	✅ Stable
-Svelte	kayforms/svelte	🚧 Coming soon
+/svelte	🚧 Coming soon
 Angular	kayforms/angular	🚧 Coming soon
 🎛️ API Reference
 Core
