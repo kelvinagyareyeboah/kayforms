@@ -1,7 +1,6 @@
 pm/v/kayforms.svg)](https://www.npmjs.com/package/kayforms)
 [![bundle size](https://img.shields.io/bundlephobia/minzip/kayforms)](https://bundlephobia.com/package/kayforms)
-[![license](https://img.shields.io/npm/l/kayforms.svg)](https://github.com/yourusername/kayforms/blob/main/LICENSE)
-[![TypeScript](https://img.shields.io/badge/TypeScript-Ready-blue)](https://www.type
+
 
 ## ✨ Why KayForms?
 
