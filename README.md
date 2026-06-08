@@ -1,9 +1,5 @@
 led)
-typrward one step
-
-form.jumpTo(index)     // Jump to specific history index
-form.clearHistory()    // Clear all history
-form.getHistory()      // Get full history array
+typ     // Get full history array
 form.exportHistory()   // Export as JSON
 form.importHistory(json) // Import from JSON
 form.playback()        // Auto-play timeline
