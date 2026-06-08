@@ -1,7 +1,6 @@
 
 
-### For the non-technical person:
-It's like a **dashcam for your forms**. Records every keystroke, every error, everything. Then you can rewind and watch exactly what broke.
+
 
 ### For the developer:
 Fine-grained signal-based rollbacks. Transaction-batched state jumps. Async validation logging with timestamps. Full JSON export/import. Chrome DevTools panel. **All in <1KB.**
