@@ -1,7 +1,7 @@
 {
-  "name": "kayforms-monorepo",
-  "version": "0.0.0",
-  "private": true,
+  "name": "kayforms",
+  "version": "0.1.0",
+  "private": false,
   "description": "The first framework-agnostic reactive form library with time-travel debugging",
   "scripts": {
     "build": "pnpm -r run build",
@@ -17,7 +17,7 @@
     "time-travel",
     "framework-agnostic"
   ],
-  "author": "Kayforms",
+  "author": "Kelvin Agyare Yeboah",
   "license": "MIT",
   "engines": {
     "node": ">=18",

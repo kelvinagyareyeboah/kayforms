@@ -1,6 +1,6 @@
 {
   "name": "@kayforms/core",
-  "version": "0.1.0",
+  "version": "0.1.2",
   "description": "Framework-agnostic reactive form engine built on signals",
   "type": "module",
   "main": "./dist/index.cjs",
@@ -18,7 +18,9 @@
       }
     }
   },
-  "files": ["dist"],
+  "files": [
+    "dist"
+  ],
   "scripts": {
     "build": "tsup",
     "dev": "tsup --watch",

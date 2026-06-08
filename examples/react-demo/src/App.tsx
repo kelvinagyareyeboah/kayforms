@@ -3,684 +3,823 @@ import { useForm, useField, FormProvider, useSignalValue } from "@kayforms/react
 import { validators, getFormRegistry, createComputed, batch } from "@kayforms/core";
 import { connectDevTools } from "@kayforms/devtools";
 
-// ---------------------------------------------------------------------------
-// Form Step 1: User Profile Field Components
-// ---------------------------------------------------------------------------
+// ─── Styles ──────────────────────────────────────────────────────────────────
+const css = `
+  @import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;1,9..40,300&family=DM+Mono:wght@400;500&display=swap');
+
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+  :root {
+    --bg:         #0b0c0e;
+    --bg-surface: #111214;
+    --bg-raised:  #18191d;
+    --bg-input:   #1e1f24;
+    --border:     rgba(255,255,255,0.07);
+    --border-md:  rgba(255,255,255,0.12);
+    --accent:     #5b6af7;
+    --accent-dim: rgba(91,106,247,0.15);
+    --accent-glow:rgba(91,106,247,0.35);
+    --success:    #22c55e;
+    --danger:     #f87171;
+    --text-1:     #f0f0f2;
+    --text-2:     #9a9ba8;
+    --text-3:     #5a5b68;
+    --mono:       'DM Mono', monospace;
+    --sans:       'DM Sans', sans-serif;
+    --radius-sm:  6px;
+    --radius-md:  10px;
+    --radius-lg:  16px;
+    --radius-xl:  22px;
+  }
+
+  body {
+    font-family: var(--sans);
+    background: var(--bg);
+    color: var(--text-1);
+    min-height: 100vh;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  /* ─── Layout ─────────────────────────────────── */
+  .shell {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 48px 24px 80px;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+  }
+
+  /* ─── Header ─────────────────────────────────── */
+  .header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-bottom: 32px;
+    border-bottom: 1px solid var(--border);
+  }
+  .header-left { display: flex; align-items: center; gap: 14px; }
+  .logo {
+    width: 38px; height: 38px;
+    background: var(--accent);
+    border-radius: var(--radius-md);
+    display: flex; align-items: center; justify-content: center;
+    font-size: 18px; font-weight: 600; color: #fff;
+    letter-spacing: -0.5px;
+  }
+  .brand-name {
+    font-size: 17px; font-weight: 600; letter-spacing: -0.3px; color: var(--text-1);
+  }
+  .brand-sub { font-size: 12px; color: var(--text-3); margin-top: 1px; }
+  .header-badges { display: flex; gap: 8px; }
+  .badge {
+    font-size: 11px; font-family: var(--mono);
+    padding: 4px 10px; border-radius: 20px;
+    border: 1px solid var(--border-md);
+    color: var(--text-2);
+    background: var(--bg-raised);
+    letter-spacing: 0.2px;
+  }
+  .badge.accent { border-color: var(--accent-glow); color: var(--accent); background: var(--accent-dim); }
+
+  /* ─── Content grid ───────────────────────────── */
+  .content-grid {
+    display: grid;
+    grid-template-columns: 1fr 380px;
+    gap: 16px;
+    align-items: start;
+  }
+  @media (max-width: 900px) { .content-grid { grid-template-columns: 1fr; } }
+
+  /* ─── Cards ──────────────────────────────────── */
+  .card {
+    background: var(--bg-surface);
+    border: 1px solid var(--border);
+    border-radius: var(--radius-xl);
+    overflow: hidden;
+  }
+  .card-inner { padding: 28px; }
+
+  /* ─── Wizard steps ───────────────────────────── */
+  .wizard-nav {
+    display: flex;
+    align-items: center;
+    gap: 0;
+    padding: 20px 28px;
+    border-bottom: 1px solid var(--border);
+  }
+  .step-item {
+    display: flex; align-items: center; gap: 10px;
+    cursor: pointer; padding: 6px 0;
+  }
+  .step-dot {
+    width: 26px; height: 26px;
+    border-radius: 50%;
+    border: 1.5px solid var(--border-md);
+    display: flex; align-items: center; justify-content: center;
+    font-size: 11px; font-weight: 600; font-family: var(--mono);
+    color: var(--text-3);
+    transition: all 0.2s;
+    flex-shrink: 0;
+  }
+  .step-item.active .step-dot {
+    border-color: var(--accent);
+    color: var(--accent);
+    background: var(--accent-dim);
+    box-shadow: 0 0 0 4px var(--accent-dim);
+  }
+  .step-item.done .step-dot {
+    border-color: var(--success);
+    color: var(--success);
+    background: rgba(34,197,94,0.1);
+  }
+  .step-label {
+    font-size: 12px; font-weight: 500; color: var(--text-3);
+    transition: color 0.2s;
+    white-space: nowrap;
+  }
+  .step-item.active .step-label { color: var(--text-1); }
+  .step-item.done .step-label { color: var(--text-2); }
+  .step-divider {
+    flex: 1; height: 1px; background: var(--border); margin: 0 10px;
+  }
+
+  /* ─── Form elements ──────────────────────────── */
+  .form-body { padding: 28px; }
+  .form-group { margin-bottom: 20px; }
+  .form-label {
+    display: block;
+    font-size: 12px; font-weight: 500; letter-spacing: 0.4px;
+    color: var(--text-2); text-transform: uppercase;
+    margin-bottom: 8px;
+  }
+  .form-label .req { color: var(--accent); margin-left: 2px; }
+
+  .input-wrap { position: relative; }
+  .input-wrap input,
+  .input-wrap select {
+    width: 100%;
+    padding: 10px 14px;
+    background: var(--bg-input);
+    border: 1px solid var(--border-md);
+    border-radius: var(--radius-md);
+    color: var(--text-1);
+    font-family: var(--sans);
+    font-size: 14px;
+    outline: none;
+    transition: border-color 0.15s, box-shadow 0.15s;
+    appearance: none;
+    -webkit-appearance: none;
+  }
+  .input-wrap input::placeholder { color: var(--text-3); }
+  .input-wrap input:focus,
+  .input-wrap select:focus {
+    border-color: var(--accent);
+    box-shadow: 0 0 0 3px var(--accent-dim);
+  }
+  .input-wrap.has-error input,
+  .input-wrap.has-error select {
+    border-color: var(--danger);
+    box-shadow: 0 0 0 3px rgba(248,113,113,0.12);
+  }
+  .input-wrap.is-valid input,
+  .input-wrap.is-valid select {
+    border-color: rgba(34,197,94,0.4);
+  }
+  .input-wrap select {
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' viewBox='0 0 24 24'%3E%3Cpath fill='%236b7280' d='M7 10l5 5 5-5z'/%3E%3C/svg%3E");
+    background-repeat: no-repeat;
+    background-position: right 12px center;
+    padding-right: 36px;
+    cursor: pointer;
+  }
+  .input-wrap select option { background: #18191d; }
+
+  .field-error {
+    display: flex; align-items: center; gap: 5px;
+    font-size: 11px; color: var(--danger);
+    margin-top: 6px; font-weight: 500;
+  }
+  .field-error::before { content: '●'; font-size: 6px; }
+
+  .checkbox-row {
+    display: flex; align-items: center; gap: 10px;
+    cursor: pointer;
+    padding: 12px 14px;
+    background: var(--bg-input);
+    border: 1px solid var(--border-md);
+    border-radius: var(--radius-md);
+    transition: border-color 0.15s;
+  }
+  .checkbox-row:hover { border-color: var(--border-md); }
+  .checkbox-row input[type=checkbox] {
+    width: 16px; height: 16px; flex-shrink: 0;
+    accent-color: var(--accent);
+    cursor: pointer;
+  }
+  .checkbox-row span { font-size: 13px; color: var(--text-2); }
+
+  /* ─── Inline info box ────────────────────────── */
+  .info-box {
+    padding: 12px 14px;
+    background: var(--bg-input);
+    border: 1px solid var(--border-md);
+    border-radius: var(--radius-md);
+    font-size: 13px;
+    color: var(--text-2);
+    line-height: 1.5;
+  }
+
+  /* ─── Form footer / buttons ──────────────────── */
+  .form-footer {
+    display: flex; justify-content: space-between; align-items: center;
+    padding: 20px 28px;
+    border-top: 1px solid var(--border);
+  }
+  .btn {
+    display: inline-flex; align-items: center; gap: 6px;
+    padding: 9px 20px;
+    font-family: var(--sans); font-size: 13px; font-weight: 500;
+    border-radius: var(--radius-md);
+    border: none; cursor: pointer;
+    transition: all 0.15s;
+    letter-spacing: 0.1px;
+  }
+  .btn:disabled { opacity: 0.35; cursor: not-allowed; }
+  .btn-ghost {
+    background: transparent;
+    color: var(--text-2);
+    border: 1px solid var(--border-md);
+  }
+  .btn-ghost:hover:not(:disabled) { background: var(--bg-raised); color: var(--text-1); }
+  .btn-primary {
+    background: var(--accent);
+    color: #fff;
+  }
+  .btn-primary:hover:not(:disabled) {
+    background: #6b7af9;
+    box-shadow: 0 4px 16px var(--accent-glow);
+    transform: translateY(-1px);
+  }
+  .btn-success {
+    background: var(--success);
+    color: #0b1a0f;
+  }
+  .btn-success:hover { filter: brightness(1.1); }
+  .btn-danger { background: var(--danger); color: #2a0a0a; }
+  .btn-danger:hover { filter: brightness(1.1); }
+
+  /* ─── Success screen ─────────────────────────── */
+  .success-screen {
+    padding: 48px 28px;
+    display: flex; flex-direction: column; align-items: center;
+    text-align: center; gap: 16px;
+  }
+  .success-icon {
+    width: 56px; height: 56px;
+    background: rgba(34,197,94,0.12);
+    border: 1.5px solid rgba(34,197,94,0.35);
+    border-radius: 50%;
+    display: flex; align-items: center; justify-content: center;
+    font-size: 22px;
+    color: var(--success);
+    animation: pop 0.3s ease;
+  }
+  @keyframes pop {
+    0% { transform: scale(0.6); opacity: 0; }
+    80% { transform: scale(1.08); }
+    100% { transform: scale(1); opacity: 1; }
+  }
+  .success-title { font-size: 22px; font-weight: 600; letter-spacing: -0.4px; }
+  .success-sub { font-size: 13px; color: var(--text-2); max-width: 380px; line-height: 1.6; }
+  .json-preview {
+    width: 100%; text-align: left;
+    background: var(--bg-input);
+    border: 1px solid var(--border);
+    border-radius: var(--radius-md);
+    padding: 16px;
+    font-family: var(--mono); font-size: 11.5px;
+    color: var(--text-2);
+    white-space: pre; overflow-x: auto;
+    max-height: 240px; overflow-y: auto;
+    line-height: 1.6;
+  }
+
+  /* ─── Right panel: State inspector ───────────── */
+  .inspector-header {
+    display: flex; align-items: center; justify-content: space-between;
+    padding: 18px 22px;
+    border-bottom: 1px solid var(--border);
+  }
+  .inspector-title {
+    font-size: 11px; font-weight: 600; letter-spacing: 0.6px;
+    color: var(--text-3); text-transform: uppercase;
+  }
+  .live-dot {
+    width: 7px; height: 7px; border-radius: 50%;
+    background: var(--success);
+    box-shadow: 0 0 6px var(--success);
+    animation: pulse 1.6s ease-in-out infinite;
+  }
+  @keyframes pulse {
+    0%, 100% { opacity: 1; }
+    50% { opacity: 0.3; }
+  }
+  .inspector-body { padding: 14px; display: flex; flex-direction: column; gap: 10px; }
+  .form-block {
+    border-radius: var(--radius-md);
+    border: 1px solid var(--border);
+    overflow: hidden;
+  }
+  .form-block-head {
+    display: flex; justify-content: space-between; align-items: center;
+    padding: 9px 12px;
+    background: var(--bg-raised);
+    border-bottom: 1px solid var(--border);
+  }
+  .form-id {
+    font-family: var(--mono); font-size: 11px; color: var(--text-2);
+  }
+  .validity-tag {
+    font-size: 10px; font-weight: 600; letter-spacing: 0.3px;
+    padding: 2px 8px; border-radius: 10px;
+  }
+  .validity-tag.valid { background: rgba(34,197,94,0.1); color: var(--success); }
+  .validity-tag.invalid { background: rgba(248,113,113,0.1); color: var(--danger); }
+  .form-block pre {
+    padding: 10px 12px;
+    font-family: var(--mono); font-size: 10.5px;
+    color: var(--text-3);
+    line-height: 1.65; overflow-x: auto;
+    white-space: pre;
+    max-height: 180px; overflow-y: auto;
+  }
+
+  /* ─── Benchmark section ──────────────────────── */
+  .bench-card { padding: 24px 28px; }
+  .bench-header {
+    display: flex; align-items: flex-start; justify-content: space-between;
+    gap: 16px; margin-bottom: 24px;
+  }
+  .bench-title { font-size: 15px; font-weight: 600; letter-spacing: -0.2px; margin-bottom: 4px; }
+  .bench-sub { font-size: 12px; color: var(--text-3); line-height: 1.5; max-width: 480px; }
+  .bench-controls { display: flex; align-items: center; gap: 14px; flex-shrink: 0; }
+  .fps-box {
+    text-align: center;
+    background: var(--bg-raised);
+    border: 1px solid var(--border);
+    border-radius: var(--radius-md);
+    padding: 6px 16px;
+    min-width: 70px;
+  }
+  .fps-val { font-family: var(--mono); font-size: 22px; font-weight: 500; color: var(--text-1); }
+  .fps-label { font-size: 10px; color: var(--text-3); letter-spacing: 0.5px; text-transform: uppercase; }
+
+  /* ─── Benchmark grid ─────────────────────────── */
+  .bench-grid {
+    display: grid;
+    grid-template-columns: repeat(50, 1fr);
+    gap: 2px;
+  }
+  .cell {
+    aspect-ratio: 1;
+    border-radius: 2px;
+    background: var(--bg-raised);
+    border: 1px solid var(--border);
+    transition: background 0.06s, border-color 0.06s;
+  }
+  .cell.err { background: rgba(248,113,113,0.5); border-color: rgba(248,113,113,0.7); }
+  .cell.a0 { background: rgba(91,106,247,0.15); border-color: rgba(91,106,247,0.25); }
+  .cell.a1 { background: rgba(91,106,247,0.35); border-color: rgba(91,106,247,0.5); }
+  .cell.a2 { background: rgba(91,106,247,0.6); border-color: rgba(91,106,247,0.7); }
+  .cell.a3 { background: rgba(91,106,247,0.85); border-color: var(--accent); }
+
+  /* ─── Section label ──────────────────────────── */
+  .section-label {
+    font-size: 11px; font-weight: 600; letter-spacing: 0.6px;
+    color: var(--text-3); text-transform: uppercase; margin-bottom: 10px;
+  }
+`;
+
+// ─── Profile Fields ───────────────────────────────────────────────────────────
 function ProfileFields() {
-  const nameField = useField<string>("name");
-  const emailField = useField<string>("email");
-  const ageField = useField<string>("age");
+  const name = useField("name");
+  const email = useField("email");
+  const age = useField("age");
 
   return (
-    <div className="form-section">
-      <div className="form-group">
-        <label>
-          Full Name <span className="required-star">*</span>
-        </label>
-        <div className={`input-wrapper ${nameField.touched && nameField.error ? "error" : nameField.touched ? "valid" : ""}`}>
-          <input
-            type="text"
-            placeholder="Enter your name (min 3 chars)"
-            {...nameField.inputProps}
-          />
-        </div>
-        {nameField.touched && nameField.error && (
-          <span className="validation-error">⚠️ {nameField.error}</span>
-        )}
-      </div>
-
-      <div className="form-group">
-        <label>
-          Email Address <span className="required-star">*</span>
-        </label>
-        <div className={`input-wrapper ${emailField.touched && emailField.error ? "error" : emailField.touched ? "valid" : ""}`}>
-          <input
-            type="email"
-            placeholder="you@example.com"
-            {...emailField.inputProps}
-          />
-        </div>
-        {emailField.touched && emailField.error && (
-          <span className="validation-error">⚠️ {emailField.error}</span>
-        )}
-      </div>
-
-      <div className="form-group">
-        <label>
-          Age <span className="required-star">*</span>
-        </label>
-        <div className={`input-wrapper ${ageField.touched && ageField.error ? "error" : ageField.touched ? "valid" : ""}`}>
-          <input
-            type="number"
-            placeholder="Must be 18 or older"
-            {...ageField.inputProps}
-          />
-        </div>
-        {ageField.touched && ageField.error && (
-          <span className="validation-error">⚠️ {ageField.error}</span>
-        )}
-      </div>
+    <div className="form-body">
+      <FieldRow label="Full name" required field={name} type="text" placeholder="Your full name" />
+      <FieldRow label="Email address" required field={email} type="email" placeholder="you@example.com" />
+      <FieldRow label="Age" required field={age} type="number" placeholder="Must be 18 or older" />
     </div>
   );
 }
 
-// ---------------------------------------------------------------------------
-// Form Step 2: Preferences Field Components
-// ---------------------------------------------------------------------------
+// ─── Preference Fields ────────────────────────────────────────────────────────
 function PreferenceFields() {
-  const countryField = useField<string>("country");
-  const newsletterField = useField<boolean>("newsletter");
+  const country = useField("country");
+  const newsletter = useField("newsletter");
 
   return (
-    <div className="form-section">
+    <div className="form-body">
       <div className="form-group">
-        <label>Country of Residence</label>
-        <div className="input-wrapper">
-          <select {...countryField.inputProps}>
-            <option value="US">United States (USD)</option>
-            <option value="GB">United Kingdom (GBP)</option>
-            <option value="GH">Ghana (GHS - Momo Enabled)</option>
-            <option value="NG">Nigeria (NGN - Bank Enabled)</option>
+        <label className="form-label">Country of residence</label>
+        <div className="input-wrap">
+          <select {...country.inputProps}>
+            <option value="US">United States — USD</option>
+            <option value="GB">United Kingdom — GBP</option>
+            <option value="GH">Ghana — GHS · Momo enabled</option>
+            <option value="NG">Nigeria — NGN · Bank enabled</option>
           </select>
         </div>
       </div>
-
       <div className="form-group">
-        <label className="checkbox-group">
+        <label className="form-label">Notifications</label>
+        <label className="checkbox-row">
           <input
             type="checkbox"
-            checked={!!newsletterField.value}
-            onChange={(e) => newsletterField.onChange(e.target.checked)}
-            onBlur={newsletterField.onBlur}
+            checked={!!newsletter.value}
+            onChange={(e) => newsletter.onChange(e.target.checked)}
+            onBlur={newsletter.onBlur}
           />
-          <div className="checkbox-box"></div>
-          <span>Subscribe to developer updates & newsletters</span>
+          <span>Subscribe to developer updates &amp; changelogs</span>
         </label>
       </div>
     </div>
   );
 }
 
-// ---------------------------------------------------------------------------
-// Form Step 3: Payment Field Components (Dynamic based on Step 2 Country)
-// ---------------------------------------------------------------------------
+// ─── Payment Fields ───────────────────────────────────────────────────────────
 function PaymentFields() {
-  const payMethodField = useField<string>("payMethod");
-  const cardNumberField = useField<string>("cardNumber");
-  const cardExpiryField = useField<string>("cardExpiry");
-  const momoProviderField = useField<string>("momoProvider");
-  const momoNumberField = useField<string>("momoNumber");
+  const payMethod = useField("payMethod");
+  const cardNumber = useField("cardNumber");
+  const cardExpiry = useField("cardExpiry");
+  const momoProvider = useField("momoProvider");
+  const momoNumber = useField("momoNumber");
 
-  // Read the country value from the preferences form using a cross-form computed signal
   const registry = getFormRegistry();
   const selectedCountry = useSignalValue(
     useMemo(
-      () =>
-        createComputed(() => {
-          const prefForm = registry.get("preferences");
-          return (prefForm?.values.value?.country as string) || "US";
-        }),
+      () => createComputed(() => (registry.get("preferences")?.values.value?.country) || "US"),
       [registry]
     )
   );
 
-  // If country changes, adjust payment options
   useEffect(() => {
-    if (selectedCountry === "GH") {
-      payMethodField.onChange("momo");
-    } else if (selectedCountry === "NG") {
-      payMethodField.onChange("bank");
-    } else {
-      payMethodField.onChange("card");
-    }
+    if (selectedCountry === "GH") payMethod.onChange("momo");
+    else if (selectedCountry === "NG") payMethod.onChange("bank");
+    else payMethod.onChange("card");
   }, [selectedCountry]);
 
-  const isMomoAvailable = selectedCountry === "GH";
-  const isBankAvailable = selectedCountry === "NG";
-
   return (
-    <div className="form-section">
+    <div className="form-body">
       <div className="form-group">
-        <label>Payment Method</label>
-        <div className="input-wrapper">
-          <select {...payMethodField.inputProps}>
-            {isMomoAvailable && <option value="momo">Mobile Money (Momo)</option>}
-            {isBankAvailable && <option value="bank">Bank Transfer</option>}
-            <option value="card">Credit / Debit Card</option>
+        <label className="form-label">Payment method</label>
+        <div className="input-wrap">
+          <select {...payMethod.inputProps}>
+            {selectedCountry === "GH" && <option value="momo">Mobile Money (Momo)</option>}
+            {selectedCountry === "NG" && <option value="bank">Bank transfer</option>}
+            <option value="card">Credit / debit card</option>
           </select>
         </div>
       </div>
 
-      {payMethodField.value === "momo" && (
+      {payMethod.value === "momo" && (
         <>
           <div className="form-group">
-            <label>Momo Provider <span className="required-star">*</span></label>
-            <div className="input-wrapper">
-              <select {...momoProviderField.inputProps}>
+            <label className="form-label">Momo provider</label>
+            <div className="input-wrap">
+              <select {...momoProvider.inputProps}>
                 <option value="mtn">MTN Mobile Money</option>
                 <option value="telecel">Telecel Cash</option>
                 <option value="at">AT Money</option>
               </select>
             </div>
           </div>
-          <div className="form-group">
-            <label>Momo Number <span className="required-star">*</span></label>
-            <div className={`input-wrapper ${momoNumberField.touched && momoNumberField.error ? "error" : momoNumberField.touched ? "valid" : ""}`}>
-              <input
-                type="text"
-                placeholder="024XXXXXXX (10 digits)"
-                {...momoNumberField.inputProps}
-              />
-            </div>
-            {momoNumberField.touched && momoNumberField.error && (
-              <span className="validation-error">⚠️ {momoNumberField.error}</span>
-            )}
-          </div>
+          <FieldRow label="Momo number" required field={momoNumber} type="text" placeholder="024XXXXXXX — 10 digits" />
         </>
       )}
 
-      {payMethodField.value === "bank" && (
+      {payMethod.value === "bank" && (
         <div className="form-group">
-          <p style={{ color: "var(--text-secondary)", fontSize: "14px", padding: "10px", background: "var(--bg-tertiary)", borderRadius: "8px", border: "1px solid var(--border-color)" }}>
-            🏦 Bank details will be generated on completion. Use checkout to pay via OPay / GTBank.
-          </p>
+          <div className="info-box">
+            Bank details are generated on checkout. Pay via OPay or GTBank after submission.
+          </div>
         </div>
       )}
 
-      {payMethodField.value === "card" && (
+      {payMethod.value === "card" && (
         <>
-          <div className="form-group">
-            <label>Card Number <span className="required-star">*</span></label>
-            <div className={`input-wrapper ${cardNumberField.touched && cardNumberField.error ? "error" : cardNumberField.touched ? "valid" : ""}`}>
-              <input
-                type="text"
-                placeholder="4111 2222 3333 4444"
-                {...cardNumberField.inputProps}
-              />
-            </div>
-            {cardNumberField.touched && cardNumberField.error && (
-              <span className="validation-error">⚠️ {cardNumberField.error}</span>
-            )}
-          </div>
-
-          <div className="form-group">
-            <label>Expiration Date <span className="required-star">*</span></label>
-            <div className={`input-wrapper ${cardExpiryField.touched && cardExpiryField.error ? "error" : cardExpiryField.touched ? "valid" : ""}`}>
-              <input
-                type="text"
-                placeholder="MM/YY"
-                {...cardExpiryField.inputProps}
-              />
-            </div>
-            {cardExpiryField.touched && cardExpiryField.error && (
-              <span className="validation-error">⚠️ {cardExpiryField.error}</span>
-            )}
-          </div>
+          <FieldRow label="Card number" required field={cardNumber} type="text" placeholder="4111 2222 3333 4444" />
+          <FieldRow label="Expiration" required field={cardExpiry} type="text" placeholder="MM / YY" />
         </>
       )}
     </div>
   );
 }
 
-// ---------------------------------------------------------------------------
-// Benchmark Cell Component (Uses granular signals - does NOT trigger main grid re-renders)
-// ---------------------------------------------------------------------------
-interface CellProps {
-  index: number;
-}
-function BenchmarkCell({ index }: CellProps) {
-  // Bind only to this cell's field node in the benchmark form
-  const fieldName = `cell_${index}`;
-  const cellField = useField<number>(fieldName);
-
-  const isActive = cellField.value;
-  const isErr = cellField.error;
-
-  let className = "cell";
-  if (isErr) {
-    className += " err";
-  } else if (typeof isActive === "number" && isActive >= 0) {
-    className += ` active-${isActive}`;
-  }
-
+// ─── Shared FieldRow ──────────────────────────────────────────────────────────
+function FieldRow({ label, required, field, type, placeholder }) {
+  const hasError = field.touched && field.error;
+  const isValid = field.touched && !field.error;
   return (
-    <div
-      className={className}
-      title={`Field ${index}`}
-      data-id={index}
-    />
+    <div className="form-group">
+      <label className="form-label">
+        {label}{required && <span className="req"> *</span>}
+      </label>
+      <div className={`input-wrap ${hasError ? "has-error" : isValid ? "is-valid" : ""}`}>
+        <input type={type} placeholder={placeholder} {...field.inputProps} />
+      </div>
+      {hasError && <p className="field-error">{field.error}</p>}
+    </div>
   );
 }
 
-// ---------------------------------------------------------------------------
-// Main App Component
-// ---------------------------------------------------------------------------
+// ─── Benchmark Cell ───────────────────────────────────────────────────────────
+function BenchmarkCell({ index }) {
+  const cell = useField(`cell_${index}`);
+  let cls = "cell";
+  if (cell.error) cls += " err";
+  else if (cell.value === 0) cls += " a0";
+  else if (cell.value === 1) cls += " a1";
+  else if (cell.value === 2) cls += " a2";
+  else if (cell.value === 3) cls += " a3";
+  return <div className={cls} />;
+}
+
+// ─── App ──────────────────────────────────────────────────────────────────────
 export default function App() {
   const [step, setStep] = useState(1);
-  const [submittedData, setSubmittedData] = useState<any>(null);
-  
-  // Benchmark state
-  const [isBenchmarkRunning, setIsBenchmarkRunning] = useState(false);
+  const [submittedData, setSubmittedData] = useState(null);
+  const [benchRunning, setBenchRunning] = useState(false);
   const [fps, setFps] = useState(60);
-  const renderedCellCount = 1000;
-  const frameCountRef = useRef(0);
-  const lastTimeRef = useRef(performance.now());
-  const benchmarkTimerRef = useRef<any>(null);
+  const frameRef = useRef(0);
+  const lastRef = useRef(performance.now());
+  const rafRef = useRef(null);
 
-  // Initialize Step 1: Profile Form
   const profileForm = useForm({
     id: "profile",
     initialValues: { name: "", email: "", age: "" },
     fieldValidators: {
-      name: [validators.required("Name is required"), validators.minLength(3, "Name must be at least 3 characters")],
-      email: [validators.required("Email is required"), validators.email("Please enter a valid email address")],
-      age: [validators.required("Age is required"), validators.custom((val) => {
-        const num = Number(val);
-        if (isNaN(num)) return "Age must be a number";
-        return num >= 18 ? undefined : "Must be 18 or older";
+      name: [validators.required("Name is required"), validators.minLength(3, "Minimum 3 characters")],
+      email: [validators.required("Email is required"), validators.email("Enter a valid email")],
+      age: [validators.required("Age is required"), validators.custom((v) => {
+        const n = Number(v);
+        return isNaN(n) ? "Must be a number" : n >= 18 ? undefined : "Must be 18 or older";
       })],
     },
   });
 
-  // Initialize Step 2: Preferences Form
   const preferencesForm = useForm({
     id: "preferences",
-    initialValues: { country: "US", newsletter: false },
+    initialValues: { country: "GH", newsletter: false },
   });
 
-  // Initialize Step 3: Payment Form
   const paymentForm = useForm({
     id: "payment",
-    initialValues: {
-      payMethod: "card",
-      cardNumber: "",
-      cardExpiry: "",
-      momoProvider: "mtn",
-      momoNumber: "",
-    },
+    initialValues: { payMethod: "card", cardNumber: "", cardExpiry: "", momoProvider: "mtn", momoNumber: "" },
     fieldValidators: {
-      cardNumber: [
-        validators.custom((val: any) => {
-          // Only validate if card payment is active
-          const paymentStore = getFormRegistry().get("payment");
-          const method = paymentStore?.values.peek()?.payMethod;
-          if (method !== "card") return undefined;
-          
-          if (!val) return "Card number is required";
-          const digits = val.replace(/\D/g, "");
-          return digits.length >= 12 ? undefined : "Invalid card format";
-        }),
-      ],
-      cardExpiry: [
-        validators.custom((val: any) => {
-          const paymentStore = getFormRegistry().get("payment");
-          const method = paymentStore?.values.peek()?.payMethod;
-          if (method !== "card") return undefined;
-
-          if (!val) return "Expiry date is required";
-          return /^\d{2}\/\d{2}$/.test(val) ? undefined : "Format MM/YY";
-        }),
-      ],
-      momoNumber: [
-        validators.custom((val: any) => {
-          const paymentStore = getFormRegistry().get("payment");
-          const method = paymentStore?.values.peek()?.payMethod;
-          if (method !== "momo") return undefined;
-
-          if (!val) return "Momo number is required";
-          const digits = val.replace(/\D/g, "");
-          return digits.length === 10 ? undefined : "Momo number must be 10 digits";
-        }),
-      ],
+      cardNumber: [validators.custom((v) => {
+        const m = getFormRegistry().get("payment")?.values.peek()?.payMethod;
+        if (m !== "card") return undefined;
+        if (!v) return "Card number required";
+        return v.replace(/\D/g, "").length >= 12 ? undefined : "Invalid card number";
+      })],
+      cardExpiry: [validators.custom((v) => {
+        const m = getFormRegistry().get("payment")?.values.peek()?.payMethod;
+        if (m !== "card") return undefined;
+        if (!v) return "Expiry required";
+        return /^\d{2}\/\d{2}$/.test(v) ? undefined : "Format MM/YY";
+      })],
+      momoNumber: [validators.custom((v) => {
+        const m = getFormRegistry().get("payment")?.values.peek()?.payMethod;
+        if (m !== "momo") return undefined;
+        if (!v) return "Momo number required";
+        return v.replace(/\D/g, "").length === 10 ? undefined : "Must be 10 digits";
+      })],
     },
   });
 
-  // Benchmark Form: 1000 fields
   const benchmarkInitialValues = useMemo(() => {
-    const vals: any = {};
-    for (let i = 0; i < 1000; i++) {
-      vals[`cell_${i}`] = -1;
-    }
-    return vals;
+    const v = {};
+    for (let i = 0; i < 1000; i++) v[`cell_${i}`] = -1;
+    return v;
   }, []);
 
-  const benchmarkForm = useForm({
-    id: "benchmark",
-    initialValues: benchmarkInitialValues,
-  });
+  const benchmarkForm = useForm({ id: "benchmark", initialValues: benchmarkInitialValues });
 
-  // Connect forms to DevTools on mount
   useEffect(() => {
-    const devtools = connectDevTools(
-      profileForm.store,
-      preferencesForm.store,
-      paymentForm.store,
-      { minimized: true } // Start as a small floating orb in the bottom-right corner
-    );
-    return () => devtools.destroy();
-  }, [profileForm.store, preferencesForm.store, paymentForm.store]);
+    const dt = connectDevTools(profileForm.store, preferencesForm.store, paymentForm.store, { minimized: true });
+    return () => dt.destroy();
+  }, []);
 
-  // Handle wizard next / submit
   const handleNext = async () => {
     if (step === 1) {
-      const errors = await profileForm.store.validateAll();
-      if (Object.keys(errors).length === 0) {
-        setStep(2);
-      }
+      const e = await profileForm.store.validateAll();
+      if (!Object.keys(e).length) setStep(2);
     } else if (step === 2) {
-      const errors = await preferencesForm.store.validateAll();
-      if (Object.keys(errors).length === 0) {
-        setStep(3);
-      }
+      const e = await preferencesForm.store.validateAll();
+      if (!Object.keys(e).length) setStep(3);
     }
   };
 
-  const handleBack = () => {
-    if (step > 1) {
-      setStep(step - 1);
-    }
-  };
-
-  const handleCheckoutSubmit = async (e: React.FormEvent) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
-    const profileErrors = await profileForm.store.validateAll();
-    const prefErrors = await preferencesForm.store.validateAll();
-    const payErrors = await paymentForm.store.validateAll();
-
-    if (
-      Object.keys(profileErrors).length === 0 &&
-      Object.keys(prefErrors).length === 0 &&
-      Object.keys(payErrors).length === 0
-    ) {
-      // All forms are valid!
-      setSubmittedData({
-        profile: profileForm.values,
-        preferences: preferencesForm.values,
-        payment: paymentForm.values,
-      });
+    const pe = await profileForm.store.validateAll();
+    const pre = await preferencesForm.store.validateAll();
+    const paye = await paymentForm.store.validateAll();
+    if (!Object.keys(pe).length && !Object.keys(pre).length && !Object.keys(paye).length) {
+      setSubmittedData({ profile: profileForm.values, preferences: preferencesForm.values, payment: paymentForm.values });
       setStep(4);
     }
   };
 
-  const handleResetWizard = () => {
-    profileForm.reset();
-    preferencesForm.reset();
-    paymentForm.reset();
-    setSubmittedData(null);
-    setStep(1);
+  const handleReset = () => {
+    profileForm.reset(); preferencesForm.reset(); paymentForm.reset();
+    setSubmittedData(null); setStep(1);
   };
 
-  // 1000 Fields 60fps Benchmark Loop
-  const runBenchmarkFrame = () => {
-    if (!isBenchmarkRunning) return;
-
-    // Calculate FPS
-    frameCountRef.current++;
+  // Bench loop
+  const benchLoop = () => {
+    frameRef.current++;
     const now = performance.now();
-    if (now - lastTimeRef.current >= 1000) {
-      setFps(Math.round((frameCountRef.current * 1000) / (now - lastTimeRef.current)));
-      frameCountRef.current = 0;
-      lastTimeRef.current = now;
+    if (now - lastRef.current >= 1000) {
+      setFps(Math.round((frameRef.current * 1000) / (now - lastRef.current)));
+      frameRef.current = 0;
+      lastRef.current = now;
     }
-
-    // Mutate 50 random fields on each frame
     batch(() => {
       for (let k = 0; k < 50; k++) {
-        const randIndex = Math.floor(Math.random() * 1000);
-        const cellVal = Math.random() > 0.08 ? Math.floor(Math.random() * 4) : -1;
-        
-        // Randomly set validation errors to test error visualizer cells
-        const isErr = Math.random() > 0.95;
-        const fieldName = `cell_${randIndex}`;
-        
-        benchmarkForm.store.setFieldValue(fieldName, cellVal);
-        const cellField = benchmarkForm.store.getField(fieldName);
-        
-        if (isErr) {
-          cellField.error.set("Benchmark simulated error");
-        } else {
-          cellField.error.set(undefined);
-        }
+        const i = Math.floor(Math.random() * 1000);
+        const v = Math.random() > 0.08 ? Math.floor(Math.random() * 4) : -1;
+        benchmarkForm.store.setFieldValue(`cell_${i}`, v);
+        const f = benchmarkForm.store.getField(`cell_${i}`);
+        if (Math.random() > 0.95) f.error.set("err");
+        else f.error.set(undefined);
       }
     });
-
-    benchmarkTimerRef.current = requestAnimationFrame(runBenchmarkFrame);
+    rafRef.current = requestAnimationFrame(benchLoop);
   };
 
   useEffect(() => {
-    if (isBenchmarkRunning) {
-      lastTimeRef.current = performance.now();
-      frameCountRef.current = 0;
-      benchmarkTimerRef.current = requestAnimationFrame(runBenchmarkFrame);
-    } else {
-      if (benchmarkTimerRef.current) {
-        cancelAnimationFrame(benchmarkTimerRef.current);
-      }
-    }
-    return () => {
-      if (benchmarkTimerRef.current) {
-        cancelAnimationFrame(benchmarkTimerRef.current);
-      }
-    };
-  }, [isBenchmarkRunning]);
+    if (benchRunning) {
+      lastRef.current = performance.now();
+      frameRef.current = 0;
+      rafRef.current = requestAnimationFrame(benchLoop);
+    } else if (rafRef.current) cancelAnimationFrame(rafRef.current);
+    return () => { if (rafRef.current) cancelAnimationFrame(rafRef.current); };
+  }, [benchRunning]);
+
+  const stepConfig = [
+    { n: 1, label: "Profile" },
+    { n: 2, label: "Preferences" },
+    { n: 3, label: "Payment" },
+  ];
 
   return (
-    <div className="app-container">
-      {/* App Header */}
-      <header className="app-header">
-        <div className="logo-section">
-          <div className="logo-box">K</div>
-          <div>
-            <h1>Kayforms</h1>
-            <p>The first framework-agnostic reactive form library with time-travel debugging</p>
+    <>
+      <style>{css}</style>
+      <div className="shell">
+        {/* Header */}
+        <header className="header">
+          <div className="header-left">
+            <div className="logo">K</div>
+            <div>
+              <div className="brand-name">Kayforms</div>
+              <div className="brand-sub">Reactive form library with time-travel debugging</div>
+            </div>
+          </div>
+          <div className="header-badges">
+            <span className="badge">&lt; 3 kb gzip</span>
+            <span className="badge accent">60 fps</span>
+          </div>
+        </header>
+
+        {/* Main grid */}
+        <div className="content-grid">
+          {/* Wizard card */}
+          <div className="card">
+            {step < 4 ? (
+              <>
+                {/* Step nav */}
+                <nav className="wizard-nav">
+                  {stepConfig.map(({ n, label }, idx) => (
+                    <>
+                      <div
+                        key={n}
+                        className={`step-item ${step === n ? "active" : step > n ? "done" : ""}`}
+                        onClick={() => {
+                          if (n < step) setStep(n);
+                          else if (n === 2 && profileForm.valid) setStep(2);
+                          else if (n === 3 && profileForm.valid && preferencesForm.valid) setStep(3);
+                        }}
+                      >
+                        <div className="step-dot">
+                          {step > n ? "✓" : n}
+                        </div>
+                        <span className="step-label">{label}</span>
+                      </div>
+                      {idx < stepConfig.length - 1 && <div className="step-divider" key={`d${n}`} />}
+                    </>
+                  ))}
+                </nav>
+
+                {/* Form content */}
+                <form onSubmit={handleSubmit}>
+                  {step === 1 && <FormProvider form={profileForm.store}><ProfileFields /></FormProvider>}
+                  {step === 2 && <FormProvider form={preferencesForm.store}><PreferenceFields /></FormProvider>}
+                  {step === 3 && <FormProvider form={paymentForm.store}><PaymentFields /></FormProvider>}
+
+                  <div className="form-footer">
+                    <button
+                      type="button" className="btn btn-ghost"
+                      disabled={step === 1}
+                      onClick={() => setStep(step - 1)}
+                    >
+                      ← Back
+                    </button>
+                    {step < 3
+                      ? <button type="button" className="btn btn-primary" onClick={handleNext}>Continue →</button>
+                      : <button type="submit" className="btn btn-success">Complete checkout ✓</button>
+                    }
+                  </div>
+                </form>
+              </>
+            ) : (
+              <div className="success-screen">
+                <div className="success-icon">✓</div>
+                <p className="success-title">Order placed successfully</p>
+                <p className="success-sub">
+                  Your form state was batched and submitted atomically. Use the DevTools timeline (bottom right) to time-travel through history.
+                </p>
+                <pre className="json-preview">{JSON.stringify(submittedData, null, 2)}</pre>
+                <button type="button" className="btn btn-ghost" onClick={handleReset}>
+                  ← Submit another
+                </button>
+              </div>
+            )}
+          </div>
+
+          {/* State inspector */}
+          <div className="card">
+            <div className="inspector-header">
+              <span className="inspector-title">State Inspector</span>
+              <div className="live-dot" />
+            </div>
+            <div className="inspector-body">
+              {[
+                { id: "profileForm", form: profileForm },
+                { id: "preferencesForm", form: preferencesForm },
+                { id: "paymentForm", form: paymentForm },
+              ].map(({ id, form }) => (
+                <div className="form-block" key={id}>
+                  <div className="form-block-head">
+                    <span className="form-id">{id}</span>
+                    <span className={`validity-tag ${form.valid ? "valid" : "invalid"}`}>
+                      {form.valid ? "valid" : "invalid"}
+                    </span>
+                  </div>
+                  <pre>{JSON.stringify({ values: form.values, errors: form.errors, dirty: form.dirty }, null, 2)}</pre>
+                </div>
+              ))}
+            </div>
           </div>
         </div>
-        <div className="badge-container">
-          <div className="badge size">&lt;3kb gzipped</div>
-          <div className="badge speed">60fps rendering</div>
+
+        {/* Benchmark */}
+        <div className="card">
+          <div className="bench-card">
+            <div className="bench-header">
+              <div>
+                <p className="bench-title">Fine-grained signal rendering — 1,000 fields</p>
+                <p className="bench-sub">
+                  50 fields update per frame via granular signals. Only the changed cell re-renders — no virtual DOM diffing, no full tree reconciliation.
+                </p>
+              </div>
+              <div className="bench-controls">
+                <div className="fps-box">
+                  <div className="fps-val">{fps}</div>
+                  <div className="fps-label">fps</div>
+                </div>
+                <button
+                  type="button"
+                  className={`btn ${benchRunning ? "btn-danger" : "btn-primary"}`}
+                  onClick={() => setBenchRunning(!benchRunning)}
+                >
+                  {benchRunning ? "Stop" : "Run benchmark"}
+                </button>
+              </div>
+            </div>
+
+            <FormProvider form={benchmarkForm.store}>
+              <div className="bench-grid">
+                {Array.from({ length: 1000 }, (_, i) => <BenchmarkCell key={i} index={i} />)}
+              </div>
+            </FormProvider>
+          </div>
         </div>
-      </header>
-
-      {/* Main Grid */}
-      <div className="dashboard-grid">
-        {/* Left Side: Wizard Forms */}
-        <main className="glass-card">
-          {step < 4 ? (
-            <>
-              {/* Wizard Steps indicator */}
-              <div className="wizard-header">
-                <div className="wizard-steps">
-                  <div className={`step-indicator ${step === 1 ? "active" : "completed"}`} onClick={() => setStep(1)}>
-                    <div className="step-circle">1</div>
-                    <span className="step-label">Profile</span>
-                  </div>
-                  <div className={`step-indicator ${step === 2 ? "active" : step > 2 ? "completed" : ""}`} onClick={() => { if(profileForm.valid) setStep(2); }}>
-                    <div className="step-circle">2</div>
-                    <span className="step-label">Preferences</span>
-                  </div>
-                  <div className={`step-indicator ${step === 3 ? "active" : ""}`} onClick={() => { if(profileForm.valid && preferencesForm.valid) setStep(3); }}>
-                    <div className="step-circle">3</div>
-                    <span className="step-label">Payment</span>
-                  </div>
-                </div>
-              </div>
-
-              {/* Form step screens */}
-              <form onSubmit={handleCheckoutSubmit}>
-                {step === 1 && (
-                  <FormProvider form={profileForm.store}>
-                    <ProfileFields />
-                  </FormProvider>
-                )}
-
-                {step === 2 && (
-                  <FormProvider form={preferencesForm.store}>
-                    <PreferenceFields />
-                  </FormProvider>
-                )}
-
-                {step === 3 && (
-                  <FormProvider form={paymentForm.store}>
-                    <PaymentFields />
-                  </FormProvider>
-                )}
-
-                {/* Wizard navigation buttons */}
-                <div className="button-row">
-                  {step > 1 ? (
-                    <button type="button" className="btn-btn btn-secondary" onClick={handleBack}>
-                      Back
-                    </button>
-                  ) : (
-                    <button type="button" className="btn-btn btn-secondary" disabled>
-                      Back
-                    </button>
-                  )}
-
-                  {step < 3 ? (
-                    <button type="button" className="btn-btn btn-primary" onClick={handleNext}>
-                      Next Step
-                    </button>
-                  ) : (
-                    <button type="submit" className="btn-btn btn-primary" style={{ background: "var(--gradient-success)" }}>
-                      Complete Checkout
-                    </button>
-                  )}
-                </div>
-              </form>
-            </>
-          ) : (
-            /* Checkout Success screen */
-            <div className="success-overlay">
-              <div className="success-icon">✓</div>
-              <h2>Order Completed Successfully!</h2>
-              <p>
-                Your registration and checkout values have been batched and submitted.
-                Use the DevTools timeline (bottom right) to review your history and time-travel back!
-              </p>
-              <div style={{ textAlign: "left", width: "100%", background: "var(--bg-tertiary)", padding: "16px", borderRadius: "12px", border: "1px solid var(--border-color)", marginBottom: "24px" }}>
-                <h4 style={{ marginBottom: "8px", fontFamily: "var(--font-mono)", fontSize: "14px" }}>BATON SUBMITTED SNAPSHOT</h4>
-                <pre className="json-block">{JSON.stringify(submittedData, null, 2)}</pre>
-              </div>
-              <button type="button" className="btn-btn btn-primary" onClick={handleResetWizard}>
-                Submit Another Form
-              </button>
-            </div>
-          )}
-        </main>
-
-        {/* Right Side: Reactive State Visualizer */}
-        <aside className="glass-card">
-          <div className="visualizer-title">
-            <span>Reactive State Inspector</span>
-            <div style={{ width: "10px", height: "10px", borderRadius: "50%", background: "var(--accent-success)", animation: "logo-glow 1s infinite alternate" }}></div>
-          </div>
-          
-          <div className="state-grid">
-            {/* Profile Form State */}
-            <div className={`state-form-block ${profileForm.valid ? "valid" : "invalid"}`}>
-              <div className="state-form-block-header">
-                <span className="form-id-title">profileForm</span>
-                <span className={`state-tag ${profileForm.valid ? "valid" : "invalid"}`}>
-                  {profileForm.valid ? "valid" : "invalid"}
-                </span>
-              </div>
-              <pre className="json-block">
-                {JSON.stringify(
-                  {
-                    values: profileForm.values,
-                    errors: profileForm.errors,
-                    dirty: profileForm.dirty,
-                  },
-                  null,
-                  2
-                )}
-              </pre>
-            </div>
-
-            {/* Preferences Form State */}
-            <div className={`state-form-block ${preferencesForm.valid ? "valid" : "invalid"}`}>
-              <div className="state-form-block-header">
-                <span className="form-id-title">preferencesForm</span>
-                <span className={`state-tag ${preferencesForm.valid ? "valid" : "invalid"}`}>
-                  {preferencesForm.valid ? "valid" : "invalid"}
-                </span>
-              </div>
-              <pre className="json-block">
-                {JSON.stringify(
-                  {
-                    values: preferencesForm.values,
-                    errors: preferencesForm.errors,
-                    dirty: preferencesForm.dirty,
-                  },
-                  null,
-                  2
-                )}
-              </pre>
-            </div>
-
-            {/* Payment Form State */}
-            <div className={`state-form-block ${paymentForm.valid ? "valid" : "invalid"}`}>
-              <div className="state-form-block-header">
-                <span className="form-id-title">paymentForm</span>
-                <span className={`state-tag ${paymentForm.valid ? "valid" : "invalid"}`}>
-                  {paymentForm.valid ? "valid" : "invalid"}
-                </span>
-              </div>
-              <pre className="json-block">
-                {JSON.stringify(
-                  {
-                    values: paymentForm.values,
-                    errors: paymentForm.errors,
-                    dirty: paymentForm.dirty,
-                  },
-                  null,
-                  2
-                )}
-              </pre>
-            </div>
-          </div>
-        </aside>
       </div>
-
-      {/* Benchmark Panel */}
-      <section className="glass-card benchmark-card">
-        <div className="benchmark-header">
-          <div>
-            <h2 style={{ fontSize: "20px", fontWeight: "700" }}>Smart Batching &amp; Fine-grained Rendering Demo</h2>
-            <p style={{ color: "var(--text-secondary)", fontSize: "14px" }}>
-              Renders {renderedCellCount} independent field nodes. Clicking "Run" updates 50 fields per frame via signals at 60fps,
-              meaning ONLY the changed cell components re-render!
-            </p>
-          </div>
-          <div className="benchmark-stats">
-            <div className="benchmark-stat-box">
-              <div className="stat-value">{fps}</div>
-              <div className="stat-label">FPS</div>
-            </div>
-            <button
-              type="button"
-              className="btn-btn btn-primary"
-              onClick={() => setIsBenchmarkRunning(!isBenchmarkRunning)}
-              style={{ background: isBenchmarkRunning ? "var(--gradient-error)" : "var(--gradient-accent)" }}
-            >
-              {isBenchmarkRunning ? "Stop Benchmark" : "Run 60fps Benchmark"}
-            </button>
-          </div>
-        </div>
-
-        {/* 1000 cells grid */}
-        <FormProvider form={benchmarkForm.store}>
-          <div className="benchmark-grid-visualizer">
-            {Array.from({ length: 1000 }).map((_, index) => (
-              <BenchmarkCell
-                key={index}
-                index={index}
-              />
-            ))}
-          </div>
-        </FormProvider>
-      </section>
-    </div>
+    </>
   );
 }
