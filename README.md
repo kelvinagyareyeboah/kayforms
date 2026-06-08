@@ -2,10 +2,7 @@
 With Time-Travel Enabled
 rm = createForm({ email: field(''), password: field('') });
   
-  // E
-  // Now you have undo/redo
-  const handleUndo = () => form.undo();
-  const handleRedo = () => form.redo();
+> form.redo();
   const handleExport = () => console.log(form.exportHistory());
   
   // ... rest of your component
