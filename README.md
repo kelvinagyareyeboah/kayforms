@@ -2,8 +2,7 @@
 With Time-Travel Enabled
 tsx
 import { createForm, field, enableTimeTravel } from 'kayforms/react';
-
-function DebuggableForm() {
+m() {
   const form = createForm({ email: field(''), password: field('') });
   
   // Enable time-travel debugging
