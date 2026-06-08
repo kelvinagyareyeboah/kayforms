@@ -1,10 +1,4 @@
 
-import { required, email, minLength, maxLength, pattern, match } from 'kayforms';
-c (value: string) => {
-  const res = await fetch(`/api/check/${value}`);
-  const exists = await res.json();
-  return exists ? 'Username already taken' : null;
-};
 
 const form = createForm({
   username: field('', [required(), uniqueUsername]),
