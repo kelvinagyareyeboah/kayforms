@@ -2,9 +2,7 @@ e
 Solid	kayforms/solid	✅ Stable
 /svelte	🚧 Coming soon
 Angular	kayforms/angular	🚧 Coming soon
-🎛️ API Reference
-Core
-typescript
+🎛️ API
 import { createForm, field, fieldGroup, fieldArray } from 'kayforms';
 
 // Create a form
