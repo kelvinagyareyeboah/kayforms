@@ -1,8 +1,6 @@
 
 | Feature | KayForms | React Hook Form | Formik |
-|---------|----------|-----------------|--------|
-| Framework agnostic | ✅ | ❌ React only | ❌ React only |
-| Time-travel debugging | ✅ | ❌ | ❌ |
+|---------|----------|----
 | Fine-grained re-renders | ✅ | ⚠️ Uncontrolled only | ❌ |
 | Cross-form signals | ✅ | ❌ | ❌ |
 | Bundle size | **<3KB** | 9.2KB | 12KB |
