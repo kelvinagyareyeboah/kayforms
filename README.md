@@ -1,5 +1,3 @@
-ibrary makes you choose: **s
-
 
 | Feature | KayForms | React Hook Form | Formik |
 |---------|----------|-----------------|--------|
