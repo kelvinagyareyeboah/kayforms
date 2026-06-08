@@ -5,7 +5,7 @@
 ### For the developer:
 Fine-grained signal-based rollbacks. Transaction-batched state jumps. Async validation logging with timestamps. Full JSON export/import. Chrome DevTools panel. **All in <1KB.**
 
-### What it actually does:
+### W
 Every keystroke → Recorded
 Every validation error → Timestamped
 Every async API call → Logged
