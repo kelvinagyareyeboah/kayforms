@@ -1,10 +1,4 @@
-port = () => console.log(form.exportHistory());
-  
-  // ... rest of your component
-}
-```
-📦 Framework Support
-Framework	Import	Status
+
 React	kayforms/react	✅ Stable
 Vue	kayforms/vue	✅ Stable
 Solid	kayforms/solid	✅ Stable
