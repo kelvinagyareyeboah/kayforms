@@ -1,6 +1,4 @@
-// Check if form is valid
-form.subscribe(callback) // Subscribe to changes
-Time-Travel Methods (when enabled)
+led)
 typescript
 form.undo()            // Go back one step
 form.redo()            // Go forward one step
