@@ -3,8 +3,7 @@
 text
 
 ---
-
-## 🚀 Quick Start
+ Quick Start
 
 ### Installation
 
