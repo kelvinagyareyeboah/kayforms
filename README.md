@@ -2,10 +2,7 @@
 import { createForm, field, fieldGroup, fieldArray } from 'kayforms';
 
 // Create a form
-const form = createForm(schema, options);
-
-// Fields
-const nameField = field(initialValue, validators);
+const form = e, validators);
 const addressGroup = fieldGroup({ street: field(''), city: field('') });
 const tagsArray = fieldArray(['tag1', 'tag2']);
 Form Methods
