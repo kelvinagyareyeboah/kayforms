@@ -1,9 +1,6 @@
 
 With Time-Travel Enabled
-tsx
-import { createForm, field, enableTimeTravel } from 'kayforms/react';
-m() {
-  const form = createForm({ email: field(''), password: field('') });
+rm = createForm({ email: field(''), password: field('') });
   
   // Enable time-travel debugging
   enableTimeTravel(form, { maxHistory: 100 });
