@@ -5,7 +5,6 @@
 Every async API call →
 → Rewind 50 steps in one click
 → Export entire timeline as JSON
-→ Import on any machine
 → Replay bug exactly as user saw it
 
 text
