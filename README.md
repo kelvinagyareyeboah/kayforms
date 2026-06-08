@@ -1,9 +1,7 @@
 
 
   remail.error && <span>{form.emaind} type="password" placeholder="Password" />
-      {form.password.error && <span>{form.password.error}</span>}
-    type="su
-    </form>
+
   );
 }
 With Time-Travel Enabled
