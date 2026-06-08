@@ -1,7 +1,4 @@
 
-
-```bash
-npm install kayforms
 Bas
 Form({
     email: field('', [required(), email()]),
