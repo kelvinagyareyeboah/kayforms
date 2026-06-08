@@ -3,7 +3,7 @@ Bas
 For', [minLength(8)]),
   });
 
-  remail.error && <span>{form.emailt {...form.password.bind} type="password" placeholder="Password" />
+  remail.error && <span>{form.emaind} type="password" placeholder="Password" />
       {form.password.error && <span>{form.password.error}</span>}
       
       <button type="su
