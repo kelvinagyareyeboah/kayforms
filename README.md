@@ -1,6 +1,4 @@
-# 🕰️ KayForms
 
-### Did you know your code can travel through time?
 
 **KayForms** is a JavaScript library for framework-agnostic reactive forms with **time-travel debugging**. Built on signals. Under 3KB. Runs at 60fps with 1000+ fields.
 
