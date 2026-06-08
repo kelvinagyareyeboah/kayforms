@@ -1,14 +1,4 @@
 
-
-📄 License
-MIT © Your Name
-
-⭐ Show Your Support
-If KayForms saved you time or made you smile, give it a star on GitHub!
-
-https://img.shields.io/github/stars/yourusername/kayforms
-
-🙋 FAQ
 Q: Does KayForms work with Next.js?
 A: Yes. Works with Next.js App Router and Pages Router.
 
