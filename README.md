@@ -1,8 +1,5 @@
 pm/v/ka
-tps://img.shields.io/bundlephobia/minzip/kayforms)](https://bundlephobia.com/package/kayforms)
-
-
-
+tps://img.shields.io/bundlephobia/minzip/kayforms)](https://bundlephobia
 Every form library makes you choose: **s
 KayForms gives you both.
 
