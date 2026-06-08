@@ -1,13 +1,5 @@
 
 
-Development setup
- time-travel to export the exact steps:
-
-javascript
-const history = form.exportHistory();
-// Save this JSON and attach to your GitHub issue
-Then open an issue at github.com/yourusername/kayforms/issues
-
 📄 License
 MIT © Your Name
 
