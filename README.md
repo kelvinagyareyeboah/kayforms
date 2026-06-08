@@ -7,9 +7,7 @@
 npm install kayforms
 Basic Usage (React)
 tsx
-import { createForm, field } from 'kayforms/react';
-
-function SignupForm() {
+import { createForm, field } from 'kayforms/r
   const form = createForm({
     email: field('', [required(), email()]),
     password: field('', [minLength(8)]),
