@@ -14,7 +14,6 @@
 <br/>
 
 [![npm version](https://img.shields.io/npm/v/@kayforms/core?style=for-the-badge&color=FF6B6B&labelColor=1a1a2e)](https://www.npmjs.com/package/@kayforms/core)
-[![bundle size](https://img.shields.io/bundlephobia/minzip/@kayforms/core?style=for-the-badge&color=4ECDC4&labelColor=1a1a2e)](https://bundlephobia.com/package/@kayforms/core)
 [![license](https://img.shields.io/npm/l/@kayforms/core?style=for-the-badge&color=45B7D1&labelColor=1a1a2e)](./LICENSE)
 [![TypeScript](https://img.shields.io/badge/TypeScript-Ready-3178C6?style=for-the-badge&labelColor=1a1a2e)](https://www.typescriptlang.org)
 [![GitHub stars](https://img.shields.io/github/stars/kelvinagyareyeboah/kayforms?style=for-the-badge&color=FFD93D&labelColor=1a1a2e)](https://github.com/kelvinagyareyeboah/kayforms/stargazers)
