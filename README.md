@@ -1,8 +1,5 @@
 
 
-
-### Installation
-
 ```bash
 npm install kayforms
 Basic Usage (React)
