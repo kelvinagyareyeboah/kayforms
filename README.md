@@ -1,8 +1,4 @@
-e
-Solid	kayforms/solid	✅ Stable
-/svelte	🚧 Coming soon
-Angular	kayfn
-🎛️ API
+
 import { createForm, field, fieldGroup, fieldArray } from 'kayforms';
 
 // Create a form
