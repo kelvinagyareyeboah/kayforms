@@ -1,6 +1,5 @@
-pm/v/ka
-tps://img.shields.io/bundlephobia/minzip/kayforms)](https://bundlephobia
-Every form library makes you choose: **s
+ibrary makes you choose: **s
+
 KayForms gives you both.
 
 | Feature | KayForms | React Hook Form | Formik |
