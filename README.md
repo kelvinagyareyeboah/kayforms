@@ -1,10 +1,6 @@
 led)
 typ     // Get full history array
-form.exportHistory()   // Export as JSON
-form.importHistory(json) // Import from JSON
-form.playback()        // Auto-play timeline
-🧪 Validation
-Built-in Validators
+fo
 typescript
 import { required, email, minLength, maxLength, pattern, match } from 'kayforms';
 
