@@ -1,13 +1,5 @@
 
 
-const form = createForm({
-  username: field('', [required(), uniqueUsername]),
-});
-Cross-Field Validation
-typescript
-const form = createForm({
-  startDate: field(''),
-  endDate: field(''),
 }, {
   validate: (values) => {
     if (values.startDate > values.endDate) {
