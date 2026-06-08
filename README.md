@@ -1,8 +1,6 @@
 
 import { required, email, minLength, maxLength, pattern, match } from 'kayforms';
-
-
-const uniqueUsername = async (value: string) => {
+c (value: string) => {
   const res = await fetch(`/api/check/${value}`);
   const exists = await res.json();
   return exists ? 'Username already taken' : null;
