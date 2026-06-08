@@ -1,10 +1,5 @@
 
 
-📥 Import JSON to replay bugs
-
-Installation
-Download from Chrome Web Store (link coming soon)
-
 Or build from source: cd devtools && npm run build
 
 📊 Performance
