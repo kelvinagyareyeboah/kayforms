@@ -1,9 +1,7 @@
 
 const addressGroup = fieldGroup({ street: field(''), city: field('') });
 const tagsArray = fieldArray(['tag1', 'tag2']);
-Form Methods
-t // Set entire form state
-form.reset()           // Reset to initial state
+Form Meth to initial state
 form.validate()        // Validate all fields
 form.isValid()         // Check if form is valid
 form.subscribe(callback) // Subscribe to changes
