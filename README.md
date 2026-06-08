@@ -1,14 +1,7 @@
 
 
 Development setup
-bash
-git clone https://github.com/yourusername/kayforms.git
-cd kayforms
-npm install
-npm run dev
-npm run test
-Report a bug with time-travel
-Found a bug? Use KayForms' own time-travel to export the exact steps:
+ time-travel to export the exact steps:
 
 javascript
 const history = form.exportHistory();
