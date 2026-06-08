@@ -2,10 +2,8 @@
 
 ```bash
 npm install kayforms
-Basic Usage (React)
-tsx
-import { createForm, field } from 'kayforms/r
-  const form = createForm({
+Bas
+Form({
     email: field('', [required(), email()]),
     password: field('', [minLength(8)]),
   });
