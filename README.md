@@ -1,9 +1,5 @@
 
 
----
-
-## 🕰️ Time-Travel Debugging
-
 This is the feature that makes KayForms different.
 
 ### For the non-technical person:
