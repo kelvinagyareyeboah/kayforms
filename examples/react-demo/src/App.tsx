@@ -2,9 +2,7 @@
     background: var);
     min-height: 100vh;
     -webkit-font-smoothing: antialiased;
-  }
-
-  /* ─── Layout ─────────────────────────────────── */
+  }─────────────────── */
   .shell {
     max-width: 1200px;
     margin: 0 auto;
