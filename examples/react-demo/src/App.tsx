@@ -1,6 +1,5 @@
 
-    background: var(--bg);
-    color: var(--text-1);
+    background: var);
     min-height: 100vh;
     -webkit-font-smoothing: antialiased;
   }
