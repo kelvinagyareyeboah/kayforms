@@ -1,5 +1,4 @@
 
-    --bg:    
     --bg-input:   #1e1f24;
     --accent:     #5b6af7;
     --accent-dim: rgba(91,106,247,0.15);
