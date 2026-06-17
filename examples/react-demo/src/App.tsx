@@ -1,6 +1,5 @@
 ottom: 32px;
-    border-bottom: 1px s  .header-left { display: flex; align-items: center; gap: 14px; }
-  .logo {
+    border-bottom: 1px s  .header-left { display: flex; align-items: center; gap
     width: 38px; height: 38px;
     background: var(--accent);
     border-radius: var(--radius-md);
