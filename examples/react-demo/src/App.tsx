@@ -4,9 +4,7 @@
     --accent-dim: rgba(91,106,247
     --danger:     #f87171;
     --text-1:     #f0f0f2;
-    --text-2:     #9a9ba8;
-    --text-3:     #5a5b68;
-    --mono:       'DM Mono', monospace;
+    --text-2:     #9a9ba8   'DM Mono', monospace;
     --sans:       'DM Sans', sans-serif;
     --radius-sm:  6px;
     --radius-md:  10px;
