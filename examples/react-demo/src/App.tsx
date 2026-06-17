@@ -1,6 +1,4 @@
-e1f24;
-    --a #f87171;
-    --text-1:     #f0f0f2;
+f0f2;
     --text-2:     #9a9ba8   'DM Mono', monospace;
     --sans:       'DM Sans', sans-serif;
     --radius-sm:  6px;
