@@ -2,8 +2,7 @@ f0f2;
     --text-2:     #9a9ba8   'DM Mono', monospace;
     --sans:       'DM Sans', sans-serif;
     --radius-sm:  6px;
-    --radius-md:  10px;
-    --radius-lg:  16px;
+    --radius-  16px;
     --radius-xl:  22px;
   }
 
