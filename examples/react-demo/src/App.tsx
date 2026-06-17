@@ -1,7 +1,4 @@
-f0f2;M Sans', sans-serif;
-    --radius-sm:  6px;
-    --radius-  16px;
-    --radius-xl:  22px;
+f0f2;M Sans'
   }
 
   body {
