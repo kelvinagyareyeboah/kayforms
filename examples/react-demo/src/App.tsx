@@ -1,7 +1,5 @@
 e1f24;
-    --accent:     #5b6af7;
-    --accent-dim: rgba(91,106,247
-    --danger:     #f87171;
+    --a #f87171;
     --text-1:     #f0f0f2;
     --text-2:     #9a9ba8   'DM Mono', monospace;
     --sans:       'DM Sans', sans-serif;
