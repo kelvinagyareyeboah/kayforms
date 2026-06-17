@@ -1,7 +1,5 @@
 
-  .shell {
-   
-    flex-direction: column;
+: column;
     gap: 24px;
   }
 
