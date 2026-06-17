@@ -1,8 +1,4 @@
-f0f2;M Sans'
-  }
 
-  body {
-    font-
     background: var(--bg);
     color: var(--text-1);
     min-height: 100vh;
