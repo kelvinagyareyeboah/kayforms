@@ -1,7 +1,5 @@
 
-    --bg:         #0b0c0e;
-    --bg-surface: #111214;
-    --bg-raised:  #18191d;
+    --bg:    
     --bg-input:   #1e1f24;
     --border:     rgba(255,255,255,0.07);
     --border-md:  rgba(255,255,255,0.12);
