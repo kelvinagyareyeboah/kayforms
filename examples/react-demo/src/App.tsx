@@ -1,9 +1,7 @@
 
     --bg-input:   #1e1f24;
     --accent:     #5b6af7;
-    --accent-dim: rgba(91,106,247,0.15);
-    --accent-glow:rgba(91,106,247,0.35);
-    --su
+    --accent-dim: rgba(91,106,247
     --danger:     #f87171;
     --text-1:     #f0f0f2;
     --text-2:     #9a9ba8;
