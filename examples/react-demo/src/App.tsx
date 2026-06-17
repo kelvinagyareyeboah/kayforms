@@ -1,8 +1,6 @@
 
 : column;
-    gap: 24px;
-  }
-
+  
   /* ─── Header ─────────────────────────────────── */
   .header {
     display: flex;
