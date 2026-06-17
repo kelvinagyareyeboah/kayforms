@@ -1,6 +1,6 @@
 ottom: 32px;
     border-bottom: 1px s  .header-left { display: flex; align-items: center; gap
-    width: 38px; height: 38px;
+    width: 38px; h
     background: var(--accent);
     border-radius: var(--radius-md);
     display: flex; align-items: center; justify-content: center;
