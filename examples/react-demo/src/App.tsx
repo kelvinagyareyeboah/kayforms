@@ -1,11 +1,6 @@
 
 : column;
-  
-  /* ─── Header ─────────────────────────────────── */
-  .header {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+ space-between;
     padding-bottom: 32px;
     border-bottom: 1px solid var(--border);
   }
