@@ -2,9 +2,7 @@
 : column;
  space-between;
     padding-bottom: 32px;
-    border-bottom: 1px solid var(--border);
-  }
-  .header-left { display: flex; align-items: center; gap: 14px; }
+    border-bottom: 1px s  .header-left { display: flex; align-items: center; gap: 14px; }
   .logo {
     width: 38px; height: 38px;
     background: var(--accent);
