@@ -1,8 +1,6 @@
 
   .shell {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 48px 2
+   
     flex-direction: column;
     gap: 24px;
   }
