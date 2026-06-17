@@ -1,7 +1,4 @@
-
-: column;
- space-between;
-    padding-bottom: 32px;
+ottom: 32px;
     border-bottom: 1px s  .header-left { display: flex; align-items: center; gap: 14px; }
   .logo {
     width: 38px; height: 38px;
