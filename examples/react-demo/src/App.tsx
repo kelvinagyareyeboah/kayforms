@@ -1,6 +1,4 @@
 
-    background: var);
-    min-height: 100vh;
     -webkit-font-smoothing: antialiased;
   }─────────────────── */
   .shell {
