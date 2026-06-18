@@ -1,4 +1,4 @@
-font-weight: 600; letter-spacing: -0.3px; color: var(--text-1);
+ter-spacing: -0.3px; color: var(--text-1);
   }
   .brand-sub { font-size: 12px; color: var(--text-3); margin-top: 1px; }
   .header-badges { display: flex; gap: 8px; }
