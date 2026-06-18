@@ -1,9 +1,6 @@
 
   .step-item.active .step-dot {
-    border-color: var(--accent);
-    color: var(--accent);
-    background: var(--accent-dim);
-    box-shadow: 0 0 0 4px var(--accent-dim);
+    border-c(--accent-dim);
   }
   .step-item.done .step-dot {
     border-color: var(--success);
