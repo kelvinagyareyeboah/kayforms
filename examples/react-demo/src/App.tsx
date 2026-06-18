@@ -1,6 +1,5 @@
 
-    border-bottom: 1px s  .header-left { display: flex; align-items: center; gap
-    width: 38px; h
+    border-bottom: 
     background: var(--accent);
     border-radius: var(--radius-md);
     display: flex; align-items: center; justify-content: center;
