@@ -1,9 +1,4 @@
 
-  .step-item {
-    display: flex; align-items: center; gap: 10px;
-    cursor: pointer; padding: 6px 0;
-  }
-  .step-dot {
     width: 26px; height: 26px;
     border-radius: 50%;
     border: 1.5px solid var(--x; align-items: center; justify-conten
