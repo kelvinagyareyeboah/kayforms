@@ -2,7 +2,7 @@ ter-spacing: -lex; gap: 8px; }
   .badge {
     font-size: 11px; font-family: var(--mono);
     padding: 4px 10px; border-radius: 20px;
-    border: 1px solid var(--border-md);
+    border: 1px sol
     color: var(--text-2);
     background: var(--bg-raised);
     letter-spacing: 0.2px;
