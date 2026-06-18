@@ -1,7 +1,5 @@
 
-    font-size:
-  }
-  .form-label .req { color: var(--accent); margin-left: 2px; }
+    font-size:(--accent); margin-left: 2px; }
 
   .input-wrap { position: relative; }
   .input-wrap input,
