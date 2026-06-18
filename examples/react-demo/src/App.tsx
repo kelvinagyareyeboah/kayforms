@@ -1,7 +1,4 @@
 
-    border-border); margin: 0 10px;
-  }
-
   /* ─── Form elements ──────────────────────────── */
   .form-body { padding: 28px; }
   .form-group { margin-bottom: 20px; }
