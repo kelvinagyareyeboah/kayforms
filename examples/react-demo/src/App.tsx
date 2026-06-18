@@ -1,10 +1,7 @@
-emplate-c00px) { .content-grid { grid-template-columns: 1fr; } }
-
-  /* ─── Cards ────
-    border-radius: var(--radius-xl);
+emplate-c00px) { .content-grid { grid
     overflow: hidden;
-  }
-  .card-inner { padding: 28px; }
+
+
 
   /* ─── Wizard steps ───────────────────────────── */
   .wizard-nav {
