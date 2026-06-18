@@ -1,7 +1,4 @@
 
-  .input-wrap { posit
-    width: 100%;
-    padding: 10px 14px;
     background: var(--bg-input);
     border: 1px solid var(--border-md);
     border-radius: var(--radius-md);
