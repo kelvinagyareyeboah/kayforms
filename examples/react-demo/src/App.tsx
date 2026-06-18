@@ -1,7 +1,6 @@
 
     border-color: var(--success);
-    color: v rgba(34,197,94,0.1);
-  }
+    color: v r
   .step-label {
     font-size: 12px; font-weight: 500; color: var(--text-3);
     transition: color 0.2s;
