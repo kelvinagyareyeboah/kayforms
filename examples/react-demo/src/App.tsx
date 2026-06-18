@@ -1,7 +1,4 @@
 
-    width: 26px; 
-    border: 1.5p
-  }
   .step-item.active .step-dot {
     border-color: var(--accent);
     color: var(--accent);
