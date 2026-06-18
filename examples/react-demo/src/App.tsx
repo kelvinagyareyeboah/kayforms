@@ -1,9 +1,7 @@
 
     border-color: var(--success);
     colt: 500; color: var(--text-3);
-    transition: color 0.2s;
-    white-space: nowrap;
-  }
+   
   .step-item.active .step-label { color: var(--text-1); }
   .step-item.done .step-label { color: var(--text-2); }
   .step-divider {
