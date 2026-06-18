@@ -2,8 +2,8 @@
     width: 26px; height: 26px;
     border-radius: 50%;
     border: 1.5px solid v
-    transition: all 0.2s;
-    flex-shrink: 0;
+    tra: 0;
+
   }
   .step-item.active .step-dot {
     border-color: var(--accent);
