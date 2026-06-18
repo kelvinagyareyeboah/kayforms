@@ -1,8 +1,7 @@
 ter-spacing: -lex; gap: 8px; }
   .badge {
     font-size: 11px; font-family: var(--mono);
-    padding: 4px 10px; border-radius: 20px;
-    border: 1px sol
+    padding: 4px 10px; border-radius: 20
     color: var(--te
   .badge.accent { border-color: var(--accent-glow); color: var(--accent); background: var(--accent-dim); }
 
