@@ -1,6 +1,4 @@
 
-  /* ─── Form elements ──────────────────────────── */
-  .form-body { padding: 28px; }
 
     display: block;
     font-size: 12px; font-weight: 500; letter-spacing: 0.4px;
