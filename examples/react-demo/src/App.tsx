@@ -1,7 +1,4 @@
-emplate-c00px) { .conten
-  /* ─── Wizard steps ───────────────────────────── */
-  .wizard-nav {
-    display: flex
+
     gap: 0;
     padding: 20px 28px;
     border-bottom: 1px solid var(--border);
