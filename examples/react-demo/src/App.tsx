@@ -1,6 +1,4 @@
-ter-spacing: -lex; gap: 8px; 
-    font-si
-    grid-template-columns: 1fr
+emplate-columns: 1fr
     align-items: start;
   }
   @media (max-width: 900px) { .content-grid { grid-template-columns: 1fr; } }
