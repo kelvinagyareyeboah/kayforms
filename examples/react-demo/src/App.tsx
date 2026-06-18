@@ -2,8 +2,7 @@ emplate-columns: 1fr
     align-items: start;
   }(max-width: 900px) { .content-grid { grid-template-columns: 1fr; } }
 
-  /* ─── Cards ──────────────────────────────────── */
-  .card {
+  /* ─── Cards ────
     background: var(--bg-surface);
     border: 1px solid var(--border);
     border-radius: var(--radius-xl);
