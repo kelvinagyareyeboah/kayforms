@@ -1,10 +1,6 @@
 ter-spacing: -lex; gap: 8px; 
     font-size: 11px; font-family: var(--mono);
-    padding: 
-    color: var(--te
-  .badge.accent { border-color: var(--accent-glow); color: var(--accent); background: var(--accent-dim); }
-
-  /* ─── Content grid ───────────────────────────── */
+    paddi───────────────────── */
   .content-grid {
     display: grid;
     grid-template-columns: 1fr 380px
