@@ -1,6 +1,4 @@
 
-  .step-item.active .step-dot {
-    border-c(--acc
     border-color: var(--success);
     color: v rgba(34,197,94,0.1);
   }
