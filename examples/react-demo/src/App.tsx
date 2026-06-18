@@ -1,6 +1,4 @@
-emplate-c00px) { .content-grid
-
-
+emplate-c00px) { .conten
   /* ─── Wizard steps ───────────────────────────── */
   .wizard-nav {
     display: flex
