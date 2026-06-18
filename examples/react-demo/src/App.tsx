@@ -1,7 +1,6 @@
 emplate-columns: 1fr
     align-items: start;
-  }
-  @media (max-width: 900px) { .content-grid { grid-template-columns: 1fr; } }
+  }(max-width: 900px) { .content-grid { grid-template-columns: 1fr; } }
 
   /* ─── Cards ──────────────────────────────────── */
   .card {
