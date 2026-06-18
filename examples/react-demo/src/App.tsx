@@ -1,7 +1,6 @@
 
     border-bottom: 
-    background: var(--accent);
-    border-radius: var(--radius-md);
+    backgrs-md);
     display: flex; align-items: center; justify-content: center;
     font-size: 18px; font-weight: 600; color: #fff;
     letter-spacing: -0.5px;
