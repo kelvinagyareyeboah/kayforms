@@ -4,8 +4,7 @@
   }
   .step-item.done .step-dot {
     border-color: var(--success);
-    color: var(--success);
-    background: rgba(34,197,94,0.1);
+    color: v rgba(34,197,94,0.1);
   }
   .step-label {
     font-size: 12px; font-weight: 500; color: var(--text-3);
