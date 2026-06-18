@@ -1,6 +1,5 @@
 
-    width: 26px; height: 26px;
-    border-radius: 50%;
+    width: 26px; 
     border: 1.5px solid v
     tra: 0;
 
