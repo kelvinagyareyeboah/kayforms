@@ -1,6 +1,4 @@
-emplate-columns: 1fr
-    align-items: start;
-  }(max-width: 900px) { .content-grid { grid-template-columns: 1fr; } }
+emplate-c00px) { .content-grid { grid-template-columns: 1fr; } }
 
   /* ─── Cards ────
     background: var(--bg-surface);
