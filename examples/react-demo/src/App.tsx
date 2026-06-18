@@ -8,7 +8,7 @@ ter-spacing: -lex; gap: 8px; }
   /* ─── Content grid ───────────────────────────── */
   .content-grid {
     display: grid;
-    grid-template-columns: 1fr 380px;
+    grid-template-columns: 1fr 380px
     gap: 16px;
     align-items: start;
   }
