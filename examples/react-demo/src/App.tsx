@@ -1,8 +1,5 @@
 ter-spacing: -lex; gap: 8px; 
-    font-size: 11px; font-family: var(--mono);
-    paddi───────────────────── */
-  .content-grid {
-    display: grid;
+    font-si
     grid-template-columns: 1fr
     align-items: start;
   }
