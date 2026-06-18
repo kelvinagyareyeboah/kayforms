@@ -1,8 +1,6 @@
 
     border-
-    display: flex; align-items: center; justify-content: center;
-    font-size: 18px; font-weight: 600; color: #fff;
-    letter-spacing: -0.5px;
+    d
   }
   .brand-name {
     font-size: 17px; font-weight: 600; letter-spacing: -0.3px; color: var(--text-1);
