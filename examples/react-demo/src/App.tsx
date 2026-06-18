@@ -1,8 +1,7 @@
 
   /* ─── Form elements ──────────────────────────── */
   .form-body { padding: 28px; }
-  .form-group { margin-bottom: 20px; }
-  .form-label {
+
     display: block;
     font-size: 12px; font-weight: 500; letter-spacing: 0.4px;
     color: var(--text-2); text-transform: uppercase;
