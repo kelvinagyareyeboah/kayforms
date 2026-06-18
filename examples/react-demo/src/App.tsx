@@ -1,8 +1,6 @@
 emplate-c00px) { .content-grid { grid-template-columns: 1fr; } }
 
   /* ─── Cards ────
-    background: var(--bg-surface);
-    border: 1px solid var(--border);
     border-radius: var(--radius-xl);
     overflow: hidden;
   }
