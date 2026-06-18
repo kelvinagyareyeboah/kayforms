@@ -1,7 +1,4 @@
-ter-spacing: -0.3px; color: var(--text-1);
-  }
-  .brand-sub { font-size: 12px; color: var(--text-3); margin-top: 1px; }
-  .header-badges { display: flex; gap: 8px; }
+ter-spacing: -lex; gap: 8px; }
   .badge {
     font-size: 11px; font-family: var(--mono);
     padding: 4px 10px; border-radius: 20px;
