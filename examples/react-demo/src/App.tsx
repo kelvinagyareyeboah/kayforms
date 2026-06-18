@@ -1,6 +1,5 @@
 
-    border-color: var(--success);
-    colt: 500; color: var(--text-3);
+    border-coloxt-3);
    
   .step-item.active .step-label { color: var(--text-1); }
   .step-item.done .step-label { color: var(--text-2); }
