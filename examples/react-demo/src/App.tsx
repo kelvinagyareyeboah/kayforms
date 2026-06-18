@@ -1,7 +1,5 @@
 
-  .input-wrap { position: relative; }
-  .input-wrap input,
-  .input-wrap select {
+  .input-wrap { posit
     width: 100%;
     padding: 10px 14px;
     background: var(--bg-input);
