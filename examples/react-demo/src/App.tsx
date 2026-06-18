@@ -1,8 +1,5 @@
 
-    border-coloxt-3);
-   
-  .step-item.active .step-label { color: var(--text-1); }
-  .step-ite { colo; background: var(--border); margin: 0 10px;
+    border-border); margin: 0 10px;
   }
 
   /* ─── Form elements ──────────────────────────── */
