@@ -1,4 +1,4 @@
-ottom: 32px;
+
     border-bottom: 1px s  .header-left { display: flex; align-items: center; gap
     width: 38px; h
     background: var(--accent);
