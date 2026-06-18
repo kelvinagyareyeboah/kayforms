@@ -1,6 +1,6 @@
 
     padding: 20px 28px;
-    border-bottom: 1px solid var(--border);
+    border-bott
   }
   .step-item {
     display: flex; align-items: center; gap: 10px;
