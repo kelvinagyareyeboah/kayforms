@@ -3,8 +3,7 @@
    
   .step-item.active .step-label { color: var(--text-1); }
   .step-item.done .step-label { color: var(--text-2); }
-  .step-divider {
-    flex: 1; height: 1px; background: var(--border); margin: 0 10px;
+  .step-dividpx; background: var(--border); margin: 0 10px;
   }
 
   /* ─── Form elements ──────────────────────────── */
