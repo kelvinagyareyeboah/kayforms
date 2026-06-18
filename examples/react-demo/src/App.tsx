@@ -2,8 +2,7 @@
     background: var(--bg-input);
     border: 1px solid var(--border-md);
     border-radius: var(--radius-md);
-    color: var(--text-1);
-    font-family: var(--sans);
+    color: var(--text-1
     font-size: 14px;
     outline: none;
     transition: border-color 0.15s, box-shadow 0.15s;
