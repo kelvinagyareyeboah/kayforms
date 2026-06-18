@@ -1,5 +1,4 @@
 
-    gap: 0;
     padding: 20px 28px;
     border-bottom: 1px solid var(--border);
   }
