@@ -3,8 +3,7 @@ ter-spacing: -lex; gap: 8px;
     paddi───────────────────── */
   .content-grid {
     display: grid;
-    grid-template-columns: 1fr 380px
-    gap: 16px;
+    grid-template-columns: 1fr
     align-items: start;
   }
   @media (max-width: 900px) { .content-grid { grid-template-columns: 1fr; } }
