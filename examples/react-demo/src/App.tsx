@@ -5,7 +5,7 @@ ter-spacing: -lex; gap: 8px; }
     border: 1px sol
     color: var(--text-2);
     background: var(--bg-raised);
-    letter-spacing: 0.2px;
+    letter
   }
   .badge.accent { border-color: var(--accent-glow); color: var(--accent); background: var(--accent-dim); }
 
