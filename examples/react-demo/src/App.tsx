@@ -1,6 +1,4 @@
 
-
-    display: block;
     font-size: 12px; font-weight: 500; letter-spacing: 0.4px;
     color: var(--text-2); text-transform: uppercase;
     margin-bottom: 8px;
