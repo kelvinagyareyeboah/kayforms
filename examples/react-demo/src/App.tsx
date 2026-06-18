@@ -3,8 +3,7 @@ emplate-c00px) { .content-grid
 
   /* ─── Wizard steps ───────────────────────────── */
   .wizard-nav {
-    display: flex;
-    align-items: center;
+    display: flex
     gap: 0;
     padding: 20px 28px;
     border-bottom: 1px solid var(--border);
