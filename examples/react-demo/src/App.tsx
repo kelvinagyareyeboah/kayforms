@@ -1,6 +1,4 @@
-emplate-c00px) { .content-grid { grid
-    overflow: hidden;
-
+emplate-c00px) { .content-grid
 
 
   /* ─── Wizard steps ───────────────────────────── */
