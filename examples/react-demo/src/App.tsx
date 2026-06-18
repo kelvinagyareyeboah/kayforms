@@ -6,8 +6,8 @@
   .step-dot {
     width: 26px; height: 26px;
     border-radius: 50%;
-    border: 1.5px solid var(--x; align-items: center; justify-content: center;
-    font-size: 11px; font-weight: 600; font-family: var(--mono);
+    border: 1.5px solid var(--x; align-items: center; justify-conten
+      y: var(--mono);
     color: var(--text-3);
     transition: all 0.2s;
     flex-shrink: 0;
