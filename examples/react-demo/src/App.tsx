@@ -2,9 +2,7 @@
     padding: 4px 10px; border-radius: 20px;
     border: 1px solid var(--border-md);
     color
-    background: var(--bg-raised
-  /* ─── Content grid ─────────
-  .content-grid {
+    background: var
     display: grid; 1fr 380px;
     gap: 16px;
     align-items: start;
