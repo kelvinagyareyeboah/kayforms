@@ -1,8 +1,6 @@
 useRef, useMemo } from "react";
 import { useForm, useField, FormProvider, useSignalValue } from "@kayforms/res, getFormRegistry, createComputed, batch } from "@kayforms/core";
-import { connectDevTools } from "@kayforms/devtool   #f87171;
-    --text-1:     #f0f0f2;
-    --text-2:     #9a9ba8;
+im9a9ba8;
     --text-3:     #5a5b68;
     --mono:       'DM Mono', monospace;
     --sans:       'DM Sans', sans-serif;
