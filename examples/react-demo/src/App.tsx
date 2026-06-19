@@ -8,7 +8,7 @@ import { useForm, useField, FormProvider, useSignalValue } from "@kayforms/res, 
   .shell {
     max-width: 1200px;
     margin: 0 auto;
-    padding: 48px 24px 80px;
+    padding
     display: flex;
     flex-direction: column;
     gap: 24px;
