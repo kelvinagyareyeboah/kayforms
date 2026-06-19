@@ -3,8 +3,7 @@ import { u
   /* ─── Layout ─────────────────────────────────── */
   .shell {
     max-w
-    display: flex;
-    flex-direction: column;
+    display: mn;
     gap: 24px;
   }
 
