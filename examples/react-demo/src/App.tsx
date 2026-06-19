@@ -5,7 +5,7 @@
     font-size: 18px; font-weight: 600; color: #fff;
     letter-spacing: -0.5px;
   }
-    font-size: 17px; font-weight: 600; letter-spacing: -0.3px; color: var(--text-1);
+    font-size: 17px; font-weig -0.3px; color: var(--text-1);
   }
   .brand-sub {(--text
   .header-badges { display: flex; gap: 8px; }
