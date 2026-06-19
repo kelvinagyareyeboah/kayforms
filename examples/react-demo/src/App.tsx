@@ -4,8 +4,7 @@ import { connectDevTools } from "@kayforms/devtools";
 
 // ─── Styles ──────────────
   @imp
-  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
-
+  *, *::be
   :root {
     --bg:         #0b0c0e;
     --bg-surface: #111214;
