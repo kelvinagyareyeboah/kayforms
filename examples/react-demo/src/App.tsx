@@ -1,11 +1,7 @@
 
   .header {
     display: flex;
-    align-items: center;
-    jum: 1px solid var(--border);
-  }38px; hei
-    border-radius: var(--radius-md);
-    display: flex; align-items: center; justify-content: center;
+ align-items: center; justify-content: center;
     font-size: 18px; font-weight: 600; color: #fff;
     letter-spacing: -0.5px;
   }
