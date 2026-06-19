@@ -5,8 +5,7 @@
     background: var(--bg-raised
   /* ─── Content grid ─────────
   .content-grid {
-    display: grid;
-    grid-template-columns: 1fr 380px;
+    display: grid; 1fr 380px;
     gap: 16px;
     align-items: start;
   }
