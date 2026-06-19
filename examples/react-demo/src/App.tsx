@@ -4,8 +4,6 @@
  align-items: center; justify-content: center;
     font-size: 18px; font-weight: 600; color: #fff;
     lette
-    font-size: 17px; font-weig -0.3px; color: var(--text-1);
-  }
   .brand-sub {(--text
   .header-badges { display: flex; gap: 8px; }
   .badge {
