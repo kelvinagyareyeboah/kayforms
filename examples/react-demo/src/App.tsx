@@ -5,8 +5,7 @@
     background: var
     align-items: start;
   }
-  @media (max-width: 900px) { .content-grid { grid-template-columns: 1fr; } }
-
+  @media (max-width
   /* ─── Cards ──────────────────────────────────── */
   .card {
     background: var(--bg-surface);
