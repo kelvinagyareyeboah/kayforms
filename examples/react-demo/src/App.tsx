@@ -1,9 +1,7 @@
 
   .header {
     display: flex;
- align-items: center; justify-content: center;
-    font-size: 18p8px; }
-  .badge {
+
     font-size: 11px; font-family: var(--mono);
     padding: 4px 10px; border-radius: 20px;
     border: 1px solid var(--border-md);
