@@ -3,9 +3,7 @@
     display: flex;
     align-items: center;
     jum: 1px solid var(--border);
-  }
-  .header-l
-    width: 38px; height: 38px;
+  }38px; height: 38px;
 
     
     border-radius: var(--radius-md);
