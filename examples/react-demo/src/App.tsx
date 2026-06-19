@@ -4,7 +4,7 @@ import { u
     gap: 24px;
   }
 
-  /* ─── Header ─────────────────────────────────── */
+  /* ─── Header  */
   .header {
     display: flex;
     align-items: center;
