@@ -2,10 +2,7 @@
   .header {
     display: flex;
  align-items: center; justify-content: center;
-    font-size: 18px; font-weight: 600; color: #fff;
-    lette
-  .brand-sub {(--text
-  .header-badges { display: flex; gap: 8px; }
+    font-size: 18p8px; }
   .badge {
     font-size: 11px; font-family: var(--mono);
     padding: 4px 10px; border-radius: 20px;
