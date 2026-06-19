@@ -2,9 +2,7 @@
   .header {
     display: flex;
     align-items: center;
-    justify-content: space-between;
-    padding-bottom: 32px;
-    border-bottom: 1px solid var(--border);
+    jum: 1px solid var(--border);
   }
   .header-left { display: flex; align-items: center; gap: 14px; }
   .logo {
