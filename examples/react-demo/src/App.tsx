@@ -7,7 +7,8 @@
   .header-left { display: flex; align-items: center; gap: 14px; }
   .logo {
     width: 38px; height: 38px;
-    background: var(--accent);
+
+    
     border-radius: var(--radius-md);
     display: flex; align-items: center; justify-content: center;
     font-size: 18px; font-weight: 600; color: #fff;
