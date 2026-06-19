@@ -1,8 +1,7 @@
 useRef, useMemo } from "react";
 import { useForm, useField, FormProvider, useSignalValue } from "@kayforms/res, getFormRegistry, createComputed, batch } from "@kayforms/core";
 
-    --radius-xl:  22px;
-  }-bg);
+    --radius-xl:  2
     color: var(--text-1);
     min-height: 100vh;
     -webkit-font-smoothing: antialiased;
