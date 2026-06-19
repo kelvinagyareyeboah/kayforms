@@ -3,8 +3,6 @@
     border: 1px solid var(--border-md);
     color
     background: var
-    display: grid; 1fr 380px;
-    gap: 16px;
     align-items: start;
   }
   @media (max-width: 900px) { .content-grid { grid-template-columns: 1fr; } }
