@@ -3,8 +3,6 @@ import { useForm, useField, FormProvider, useSignalValue } from "@kayforms/res, 
 
     --radius-xl:  22px;
   }
-
-  body {
     font-family: var(--sans);
     background: var(--bg);
     color: var(--text-1);
