@@ -5,7 +5,6 @@
     font-size: 18px; font-weight: 600; color: #fff;
     letter-spacing: -0.5px;
   }
-  .brand-name {
     font-size: 17px; font-weight: 600; letter-spacing: -0.3px; color: var(--text-1);
   }
   .brand-sub { font-size: 12px; color: var(--text-3); margin-top: 1px; }
