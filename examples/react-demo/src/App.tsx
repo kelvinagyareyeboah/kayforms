@@ -5,11 +5,7 @@
     padding: 20px 28px;
     border-bottom: 1px solid var(--border);
   }
-  .step-item {
-    display: flex; a
-    border-radius: 50%;
-    border: 1.5px solid var(--border-md);
-    display: flex; align-items: center; justify-content: center;
+  .step-item {nter;
     font-size: 11px; font-weight: 600; font-family: var(--mono);
     color: var(--text-3);
     transition: all 0.2s;
