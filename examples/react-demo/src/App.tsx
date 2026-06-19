@@ -7,7 +7,7 @@
   }
     font-size: 17px; font-weight: 600; letter-spacing: -0.3px; color: var(--text-1);
   }
-  .brand-sub { font-size: 12px; color: var(--text-3); margin-top: 1px; }
+  .brand-sub {(--text-3); margin-top: 1px; }
   .header-badges { display: flex; gap: 8px; }
   .badge {
     font-size: 11px; font-family: var(--mono);
