@@ -2,9 +2,7 @@ useRef, useMemo } from "react";
 import { u
   /* ─── Layout ─────────────────────────────────── */
   .shell {
-    max-width: 1200px;
-    margin: 0 auto;
-    pad
+    max-w
     display: flex;
     flex-direction: column;
     gap: 24px;
