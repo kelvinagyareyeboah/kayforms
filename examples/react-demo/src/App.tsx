@@ -1,12 +1,4 @@
 
-    padding: 4px 10px; border-radius: 20px;
-    border: 1px solid var(--border-md);
-    color
-  }
-  .card-inner { padding: 28px; }
-
-  /* ─── Wizard steps ───────────────────────────── */
-  .wizard-nav {
     display: flex;
     align-items: center;
     gap: 0;
