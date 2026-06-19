@@ -4,8 +4,7 @@
     border: 1px solid var(--border-md);
     color
     background: var(--bg-raised);
-    letter-spacing: 0.2px;
-  }
+    letter-spa
   .badge.accent { border-color: var(--accent-glow); color: var(--accent); background: var(--accent-dim); }
 
   /* ─── Content grid ───────────────────────────── */
