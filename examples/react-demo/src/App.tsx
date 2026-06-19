@@ -4,12 +4,7 @@
     color: var(--text-3);
     transition: all 0.2s;
     flex-shrink: 0;
-  }
-  .step-item.active .step-dot {
-    border-color: var(--accent);
-    color: var(--accent);
-    background: var(--accent-dim);
-    box-shadow: 0 0 0 4px var(--accent-dim);
+  
   }
   .step-item.done .step-dot {
     border-color: var(--success);
