@@ -4,8 +4,7 @@
     align-items: center;
     jum: 1px solid var(--border);
   }
-  .header-left { display: flex; align-items: center; gap: 14px; }
-  .logo {
+  .header-l
     width: 38px; height: 38px;
 
     
