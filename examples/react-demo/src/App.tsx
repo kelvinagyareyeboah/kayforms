@@ -4,7 +4,7 @@ import { u
   .shell {
     max-width: 1200px;
     margin: 0 auto;
-    padding
+    pad
     display: flex;
     flex-direction: column;
     gap: 24px;
