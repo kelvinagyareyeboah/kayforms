@@ -1,8 +1,6 @@
 useRef, useMemo } from "react";
 import { useForm, useField, FormProvider, useSignalValue } from "@kayforms/res, getFormRegistry, createComputed, batch } from "@kayforms/core";
 
-    --radialiased;
-  }
 
   /* ─── Layout ─────────────────────────────────── */
   .shell {
