@@ -7,7 +7,7 @@
     letter-spa
   .badge.accent { border-color: var(--accent-glow); color: var(--accent); background: var(--accent-dim); }
 
-  /* ─── Content grid ───────────────────────────── */
+  /* ─── Content grid ─────────
   .content-grid {
     display: grid;
     grid-template-columns: 1fr 380px;
