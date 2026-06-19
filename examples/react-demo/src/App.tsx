@@ -5,8 +5,6 @@
     color
     background: var(--bg-raised);
     letter-spa
-  .badge.accent { border-color: var(--accent-glow); color: var(--accent); background: var(--accent-dim); }
-
   /* ─── Content grid ─────────
   .content-grid {
     display: grid;
