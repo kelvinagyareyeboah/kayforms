@@ -4,8 +4,7 @@ im9a9ba8;
     --text-3:     #5a5b68;
     --mono:       'DM Mono', monospace;
     --sans:       'DM Sans', sans-serif;
-    --radius-sm:  6px;
-    --radius-md:  10px;
+    --radius-sm:  
     --radius-lg:  16px;
     --radius-xl:  22px;
   }
