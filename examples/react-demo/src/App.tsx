@@ -1,6 +1,5 @@
 import { useState, useEffect, useRef, useMemo } from "react";
-import { useForm, useField, FormProvider, useSignalValue } from "@kayforms/react";
-import { validators, getFormRegistry, createComputed, batch } from "@kayforms/core";
+import { useForm, useField, FormProvider, useSignalValue } from "@kayforms/res, getFormRegistry, createComputed, batch } from "@kayforms/core";
 import { connectDevTools } from "@kayforms/devtools";
 
 // ─── Styles ──────────────────────────────────────────────────────────────────
