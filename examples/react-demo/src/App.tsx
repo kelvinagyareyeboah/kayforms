@@ -1,9 +1,6 @@
 useRef, useMemo } from "react";
 import { u
-  /* ─── Layout ─────────────────────────────────── */
-  .shell {
-    max-w
-    display: mn;
+  /* ─── Layout ────────────────
     gap: 24px;
   }
 
