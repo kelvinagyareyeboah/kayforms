@@ -2,12 +2,7 @@ useRef, useMemo } from "react";
 import { useForm, useField, FormProvider, useSignalValue } from "@kayforms/res, getFormRegistry, createComputed, batch } from "@kayforms/core";
 import { connectDevTools } from "@kayforms/devtools";
 
-// ─── Styles ──────────────
-  @imp
-  *, *::be
-  :root {
-    --bg:         #0b0c0e;
-    --bg-surface: #111214;
+ ace: #111214;
     --bg-raised:  #18191d;
     --bg-input:   #1e1f24;
     --border:     rgba(255,255,255,0.07);
