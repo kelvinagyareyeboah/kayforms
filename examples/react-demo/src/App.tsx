@@ -3,7 +3,6 @@
     border: 1px solid var(--border-md);
     color
     background: var
-    align-items: start;
   }
   @media (max-width
   /* ─── Cards ──────────────────────────────────── */
