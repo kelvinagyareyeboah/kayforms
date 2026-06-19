@@ -3,8 +3,6 @@ import { u
   /* ─── Layout ────────────────
     gap: 24px;
   }
-
-  /* ─── Header  */
   .header {
     display: flex;
     align-items: center;
