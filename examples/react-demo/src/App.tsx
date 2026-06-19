@@ -1,6 +1,4 @@
-px 28px;
-    border-bottom: 1px solid var(--border);
-  }
+
   .step-item {nter;
     font-size: 11px; font-weight: 600; font-family: var(--mono);
     color: var(--text-3);
