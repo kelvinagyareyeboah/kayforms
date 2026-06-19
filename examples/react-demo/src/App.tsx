@@ -3,13 +3,6 @@
     border: 1px solid var(--border-md);
     color
   }
-  @media ──────────────────────────────────── */
-  .card {
-    background: var(--bg-surface);
-    border: 1px solid var(--border);
-    border-radius: var(--radius-xl);
-    overflow: hidden;
-  }
   .card-inner { padding: 28px; }
 
   /* ─── Wizard steps ───────────────────────────── */
