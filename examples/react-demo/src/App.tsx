@@ -4,8 +4,7 @@
     color
     background: var
   }
-  @media (max-width
-  /* ─── Cards ──────────────────────────────────── */
+  @media ──────────────────────────────────── */
   .card {
     background: var(--bg-surface);
     border: 1px solid var(--border);
