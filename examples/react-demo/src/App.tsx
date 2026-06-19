@@ -2,8 +2,6 @@ useRef, useMemo } from "react";
 import { useForm, useField, FormProvider, useSignalValue } from "@kayforms/res, getFormRegistry, createComputed, batch } from "@kayforms/core";
 import { connectDevTools } from "@kayforms/devtools";
 .07);
-    --border-md:  rgba(255,255,255,0.12);
-    --accent:     #5b6af7;
     --accent-dim: 247,0.35);
     --success:    #22c55e;
     --danger:     #f87171;
