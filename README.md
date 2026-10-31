@@ -4,7 +4,7 @@
 <td align="center">✅</td>
 <td align="center">❌ React o
 <tr>
-<td>⚡ Fine-grained re-renders</td>
+<td>⚡ Fine-grained
 <td align
 <td align="center">⚠️ Uncontrolled only</td>
 <td align="center">❌</td>
