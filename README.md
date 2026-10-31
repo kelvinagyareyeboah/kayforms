@@ -2,7 +2,7 @@ ebugging suer no other for
 You## ✨ What makes KayForms different
 
 <tabl<th align="center">KayForms</th>
-<th align="center">React Hook Form</th>
+<th align="center">Reac
 <th align="center">
 </tr>
 <tr<td align
