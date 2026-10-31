@@ -1,5 +1,4 @@
 
-## 🤔 Why does this ex
 E
 **Fast but iflexible but slow.Or **too big.**
 
