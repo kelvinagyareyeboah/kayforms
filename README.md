@@ -3,9 +3,8 @@ s.jpg)
 
 ## 🤔 Why does this exist?
 
-Every form library forces a trade-off.
-
-**Fast but inflexible.** Or **flexible but slow.** Or **React-only.** Or **too big.**
+Every form library forces a trade-o
+**Fast but iflexible but slow.** Or **React-only.** Or **too big.**
 
 KayForms  speed, flexibility, f, and a debugging superpower no other form library has.
 
