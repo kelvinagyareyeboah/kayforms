@@ -1,4 +1,4 @@
-e-badge&color=FF6B6B&labelColor=1a1a2e)](https://www.npmjs.com/package/@kayfor[![TypeScript](https://img.shields.io/badge/TypeScript-Ready-3178C6?style=for-the-badge&labelColor=1a1a2e)](https://ww
+olor=1a1a2e)](https://www.npmjs.com/package/@kayfor[![TypeScript](https://img.shields.io/badge/TypeScript-Ready-3178C6?style=for-the-badge&labelColor=1a1a2e)](https://ww
 [✨ Quick Start](#-quick-start) · [⏳ Time Travel](#-time-travel-debugging) · [📦 Frameworks](#-framework-support) · [📖 API Docs](#-api-reference) · [🚀 Performance](#-performance) · [🤝 Contrib
 
 ![Kayforms](kayforms.jpg)
