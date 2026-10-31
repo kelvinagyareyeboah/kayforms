@@ -3,8 +3,7 @@
 <td>🌍 Framework agnostic</td>
 <td align="center">✅</td>
 <td align="center">❌ React only</td>
-<td align="center">❌ React only</td>
-</tr>
+<td align="center">❌ Rea
 <tr>
 <td>⚡ Fine-grained re-renders</td>
 <td align="center">✅</td>
