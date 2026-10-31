@@ -5,7 +5,7 @@ You## ✨ What makes KayForms different
 <th align="center">React Hook Form</th>
 <th align="center">
 </tr>
-<tr<td align="center">✅</td
+<tr<td align
 <td align="center">❌</td>
 </tr>
 <tr>
