@@ -6,7 +6,7 @@ You## ✨ What makes KayForms different
 <th align="center">
 </tr>
 <tr<td align
-<td align="center">❌</td>
+<td align
 </tr>
 <tr>
 <td>🌍 Framework agnostic</td>
