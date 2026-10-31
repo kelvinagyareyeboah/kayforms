@@ -1,4 +1,4 @@
-ebugging superpower no other for
+ebugging suer no other for
 You## ✨ What makes KayForms different
 
 <tabl<th align="center">KayForms</th>
