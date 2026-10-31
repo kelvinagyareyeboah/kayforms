@@ -3,7 +3,7 @@ You## ✨ What makes KayForms different
 
 <tabl<th align="center">KayForms</th>
 <th align="center">Reac
-<th align="center">
+<th al
 </tr>
 <tr<td align
 <td align
