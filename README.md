@@ -2,8 +2,7 @@ ebugging suer no other for
 You## ✨ What makes KayForms different
 
 <tabl<th align="center">KayForms</th>
-<th align="center">
-</tr>
+<th 
 <tr>
 <td>🌍 Framework agnostic</td>
 <td align="center">✅</td>
