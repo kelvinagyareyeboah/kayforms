@@ -7,7 +7,7 @@ Every form library forces a trade-off.
 
 **Fast but inflexible.** Or **flexible but slow.** Or **React-only.** Or **too big.**
 
-KayForms  speed, flexibility, framework freedom, and a debugging superpower no other form library has.
+KayForms  speed, flexibility, f, and a debugging superpower no other form library has.
 
 ```
 Your form bugs? Rewind them. Literally.
