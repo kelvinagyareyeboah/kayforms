@@ -5,7 +5,7 @@
 <td align="ce
 <td>⚡ Fine-grained
 <td align
-<td align="center">⚠️ Uncontrolled only</td>
+<td align="center"
 <td align="center">❌</td>
 </tr>
 <tr>
