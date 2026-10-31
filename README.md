@@ -5,11 +5,7 @@
 <t
 <td align="center"
 <td align="center">❌</td<td align="center">❌</td>
-<td align="center">❌</td>
-</t
-<tr>
-<td>📦 Bundle size</td>
-<td align="center"><strong>&lt;3KB</strong></td>
+<td align="center">❌</td><td align="center"><strong>&lt;3KB</strong></td>
 <td align="center">9.2KB</td>
 <td align="center">12KB</td>
 </tr>
