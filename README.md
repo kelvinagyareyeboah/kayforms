@@ -1,5 +1,3 @@
-s.jpg)
----
 
 ## 🤔 Why does this ex
 E
