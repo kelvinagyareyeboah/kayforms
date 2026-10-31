@@ -2,8 +2,7 @@
 <tr>
 <td>🌍 Framework agnostic</td>
 <td align="center">✅</td>
-<td align="ce
-<td>⚡ Fi
+<t
 <td align="center"
 <td align="center">❌</td>
 </tr>
