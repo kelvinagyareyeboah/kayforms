@@ -8,8 +8,6 @@
 <td align="center"
 <td align="center">❌</td>
 </tr>
-<tr>
-<td>🔗 Cross-form signals</td>
 <td align="center">✅</td>
 <td align="center">❌</td>
 <td align="center">❌</td>
