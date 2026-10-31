@@ -1,6 +1,4 @@
-t
-<td align="center"
-<td align="center">❌</td<td align="center">❌</td>
+t</td<td align="center">❌</td>
 <td align="center">❌</td><td align="center"><strong>&lt<td al
 <tr>
 <td>🏎️ 1000+ fields at 60fps</td>
