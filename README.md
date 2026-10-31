@@ -3,8 +3,7 @@
 <td>🌍 Framework agnostic</td>
 <td align="center">✅</td>
 <td align="ce
-<td>⚡ Fine-grained
-<td align
+<td>⚡ Fi
 <td align="center"
 <td align="center">❌</td>
 </tr>
