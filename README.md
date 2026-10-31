@@ -1,5 +1,4 @@
-.**
-exibility, f, and a debugging superpower no other for
+ebugging superpower no other for
 You## ✨ What makes KayForms different
 
 <table>
