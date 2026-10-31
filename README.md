@@ -4,12 +4,9 @@
 <td align="center">✅</td>
 <t
 <td align="center"
+<td align="center">❌</td<td align="center">❌</td>
 <td align="center">❌</td>
-</tr>
-<td align="center">✅</td>
-<td align="center">❌</td>
-<td align="center">❌</td>
-</tr>
+</t
 <tr>
 <td>📦 Bundle size</td>
 <td align="center"><strong>&lt;3KB</strong></td>
