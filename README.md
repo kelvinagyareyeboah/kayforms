@@ -2,12 +2,7 @@ E
 **Fast but iflexible but slow.Or **too big.**
 
 KayForms  speed, flexibility, f, and a debugging superpower no other for
-Your form bugs? Rewin
-```
-
----
-
-## ✨ What makes KayForms different
+You## ✨ What makes KayForms different
 
 <table>
 <tr>
