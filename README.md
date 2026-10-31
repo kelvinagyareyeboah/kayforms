@@ -2,8 +2,7 @@
 <tr>
 <td>🌍 Framework agnostic</td>
 <td align="center">✅</td>
-<td align="center">❌ React o
-<tr>
+<td align="ce
 <td>⚡ Fine-grained
 <td align
 <td align="center">⚠️ Uncontrolled only</td>
