@@ -9,9 +9,7 @@
 ╚═╝  ╚═╝╚═╝  ╚═╝   ╚═╝   ╚═╝      ╚═════╝ ╚═╝  ╚═╝╚═╝     ╚═╝╚══════╝
 ```
 
-### ⏰ Forms with superpowers. Under 3KB. Runs at 60fps. **Travels through time.**
-
-<br/>
+### ⏰ Forms with superpowers. Under 3KB. Runs at 60fps. **Travels thr
 
 [![npm version](https://img.shields.io/npm/v/@kayforms/core?style=for-the-badge&color=FF6B6B&labelColor=1a1a2e)](https://www.npmjs.com/package/@kayforms/core)
 [![license](https://img.shields.io/npm/l/@kayforms/core?style=for-the-badge&color=45B7D1&labelColor=1a1a2e)](./LICENSE)
