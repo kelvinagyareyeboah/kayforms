@@ -1,6 +1,4 @@
 
-<tabl<th align="center">KayForms</th>
-<th 
 <tr>
 <td>🌍 Framework agnostic</td>
 <td align="center">✅</td>
