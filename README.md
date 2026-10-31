@@ -1,6 +1,4 @@
-  ██║██████╔╝██╔██  ██╔══╝  ██║   ██║██╔══██╗██║╚██╔╝██║╚════██║
-██║  ██╗██║ ██║   ██║     ╚██████╔╝██║  ██║██║ ╚═╝ ██║███████║
-╚═╝  ╚═╝╚═╝  ╚═╝   ╚═╝   ╚═╝   
+
 ### ⏰ Forms with superpowers. Under 3KB. Runs
 
 [![npm version](https://img.shields.io/npm/v/@kayforms/core?style=for-the-badge&color=FF6B6B&labelColor=1a1a2e)](https://www.npmjs.com/package/@kayfor[![TypeScript](https://img.shields.io/badge/TypeScript-Ready-3178C6?style=for-the-badge&labelColor=1a1a2e)](https://ww
