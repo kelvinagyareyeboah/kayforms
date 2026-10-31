@@ -1,4 +1,4 @@
-el](#-time-travel-debugging) · [📦 Frameworks](#-framework-support) · [📖 API Docs](#-api-reference) · [🚀 Performance](#-performance) · [🤝 Contrib
+vel-debugging) · [📦 Frameworks](#-framework-support) · [📖 API Docs](#-api-reference) · [🚀 Performance](#-performance) · [🤝 Contrib
 
 ![Kayforms](kayforms.jpg)
 ---
