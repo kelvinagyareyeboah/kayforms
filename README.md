@@ -3,7 +3,7 @@ s.jpg)
 
 ## 🤔 Why does this exist?
 
-Every form library forces a trade-o
+Every form library
 **Fast but iflexible but slow.** Or **React-only.** Or **too big.**
 
 KayForms  speed, flexibility, f, and a debugging superpower no other form library has.
