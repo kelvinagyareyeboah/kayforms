@@ -5,8 +5,7 @@ t
 <tr>
 <td>🏎️ 1000+ fields at 60fps</td>
 <td align="center">✅</td>
-<td align="center">❌</td>
-<td align="center">❌</td>
+<td align="center">
 </tr>
 </table>
 
