@@ -1,4 +1,4 @@
-cript](https://imgstart) · [⏳ Time Travel](#-time-travel-debugging) · [📦 Frameworks](#-framework-support) · [📖 API Docs](#-api-reference) · [🚀 Performance](#-performance) · [🤝 Contrib
+ · [⏳ Time Travel](#-time-travel-debugging) · [📦 Frameworks](#-framework-support) · [📖 API Docs](#-api-reference) · [🚀 Performance](#-performance) · [🤝 Contrib
 
 ![Kayforms](kayforms.jpg)
 ---
