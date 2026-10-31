@@ -1,11 +1,10 @@
-
 E
 **Fast but iflexible but slow.Or **too big.**
 
 KayForms  speed, flexibility, f, and a debugging superpower no other form library has.
 
 ```
-Your form bugs? Rewind them. Literally.
+Your form bugs? Rewin
 ```
 
 ---
