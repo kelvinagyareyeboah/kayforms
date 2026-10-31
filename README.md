@@ -1,6 +1,4 @@
-work agnostic</td>
-<td align="center">✅</td>
-<t
+t
 <td align="center"
 <td align="center">❌</td<td align="center">❌</td>
 <td align="center">❌</td><td align="center"><strong>&lt<td align="center">12KB</td>
