@@ -3,7 +3,7 @@ You## ✨ What makes KayForms different
 
 <tabl<th align="center">KayForms</th>
 <th align="center">React Hook Form</th>
-<th align="center">Formik</th>
+<th align="center">
 </tr>
 <tr>
 <td>⏳ Time travel debugging</td>
