@@ -1,4 +1,3 @@
-ameworks](#-framework-support) · [📖 API Docs](#-api-reference) · [🚀 Performance](#-performance) · [🤝 Contrib
 
 ![Kayforms](kayforms.jpg)
 ---
