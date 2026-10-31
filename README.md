@@ -1,5 +1,4 @@
-
-<td>🌍 Framework agnostic</td>
+work agnostic</td>
 <td align="center">✅</td>
 <t
 <td align="center"
