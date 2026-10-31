@@ -1,9 +1,8 @@
 s.jpg)
 ---
 
-## 🤔 Why does this exist?
-
-Every form library
+## 🤔 Why does this ex
+E
 **Fast but iflexible but slow.Or **too big.**
 
 KayForms  speed, flexibility, f, and a debugging superpower no other form library has.
