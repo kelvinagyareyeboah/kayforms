@@ -1,10 +1,7 @@
 ebugging superpower no other for
 You## ✨ What makes KayForms different
 
-<table>
-<tr>
-<th align="left">Feature</th>
-<th align="center">KayForms</th>
+<tabl<th align="center">KayForms</th>
 <th align="center">React Hook Form</th>
 <th align="center">Formik</th>
 </tr>
