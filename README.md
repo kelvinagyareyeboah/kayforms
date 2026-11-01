@@ -2,8 +2,7 @@ ndleSubmit}>
       <input {...form.email.bind} placeholder="Email" />
       {form.email.error && <span className="error"
       <input {...form.password.b
-> *"It's like a dashcam for your forms."*
-
+> *"It's like a dashcam for yo
 This is the feature that makes KayForms genuinely different.
 
 ### What it actually does
