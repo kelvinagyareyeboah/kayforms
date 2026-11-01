@@ -5,9 +5,7 @@ This is the feature that makes KayForm  });
 
   enableTimeTravel(form, { maxHisto  return (
         <input {...form.email.bind} placeholder="Email" />
-        <input {...form.password.bind} type="password" placeholder="Password" />
-        <button type="submit">Submit</button>
-      </form>
+        <input {...form.password.bind} type="password" placeholder="Pa      </form>
 
       {/* Time travel controls */}
       <div className="debug-controls">
