@@ -1,10 +1,7 @@
 t</td<td align="center">❌</td>
 <td align="center">❌</td><td align="center"><strong>&lt<td al
 <tr>
-<td>🏎️ 1000+ fields at 6
-#
-
-```bash
+<td>🏎️ 1000+ fie
 # Core (required)
 npm install @kayforms/core
 
