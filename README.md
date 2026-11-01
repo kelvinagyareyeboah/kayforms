@@ -4,8 +4,7 @@ it}>
 This is the feature that makes KayForm          <input {...form.email.bind} placeholder="      <div className="debug-controls">
         <button onClick={() => form.undo()}>⏪ Undo</button>
         <button onClick={() => form.redo()}>⏩ Redo</button>
-        <button onClick={() => console.log### Report a bug *with proof*
-
+        <button onClick={() => console.log### Report
 ```javascript
 // Attach this JSON to your GitHub issue and we can replay it exactly
 const timeline = form.exportHistory();
