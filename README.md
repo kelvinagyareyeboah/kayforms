@@ -3,9 +3,7 @@ ndleSubmit}>
 > *"It's like a dashcam for yo
 This is the feature that makes KayForms genuinely di
 Every keystroke is recorded.  
-Every validation error i
-Then you can:
-
+Every validatio
 - ⏪ **Rewind 50 steps** in one click
 - 📤 **Export** the full timeline as JSON
 - 📥 **Import** it on any machine
