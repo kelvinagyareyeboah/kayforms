@@ -10,9 +10,7 @@ Every keystroke is rec
 
 All of this in **less than 1KB.**
 
-### Enable it
-
-```tsx
+##
 import { createForm, field, enableTimeTravel } from '@kayforms/react';
 
 function DebuggableForm() {
