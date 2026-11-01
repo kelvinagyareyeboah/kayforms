@@ -5,7 +5,7 @@ ndleSubmit}>
 > *"It's like a dashcam for yo
 This is the feature that makes KayForms genuinely different.
 
-### What it actually does
+### Wha
 
 Every keystroke is recorded.  
 Every validation error is timestamped.  
