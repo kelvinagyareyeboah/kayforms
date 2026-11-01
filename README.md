@@ -1,8 +1,7 @@
 t</td<td align="center">❌</td>
 <td align="center">❌</td><td align="center"><strong>&lt<td al
 <tr>
-<td>🏎️ 1000+ fields at 60fps</t
-</tr>
+<td>🏎️ 1000+ fields at 60
 </table>
 
 ---
