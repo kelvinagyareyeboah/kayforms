@@ -1,8 +1,6 @@
 
 # Pick your framework
-npm install @kayform, solid, svelta
-```
-
+npm install @kayfor
 ### Your first form (React)
 
 ```tsx
