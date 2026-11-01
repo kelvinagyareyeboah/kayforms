@@ -1,5 +1,4 @@
-it}>m for yo
-This is the feature that makes KayForm          <input {...form.email.bind} placeholder="      <div className="debug-controls">
+it}>m for yo makes KayForm          <input {...form.email.bind} placeholder="      <div className="debug-controls">
         <button onClick={() => form.undo()}>⏪ Undo</button>
         <button onClick={() => form.redo()}>⏩ Redo</button>
         <button onClick={() => console.log### Report
