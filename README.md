@@ -1,7 +1,4 @@
 eld('', [minLength(8)]),
-  });
-
-  return (
     <form onSubmit={form.handleSubmit}>
       <input {...form.email.bind} placeholder="Email" />
       {form.email.error && <span className="error">{form.email.error}</span>}
