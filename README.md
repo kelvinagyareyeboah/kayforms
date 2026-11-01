@@ -6,7 +6,7 @@ t</td<td align="center">❌</td>
 npm install @kayforms/core
 
 # Pick your framework
-npm install @kayforms/react    # or vue, solid, svelta
+npm install @kayform, solid, svelta
 ```
 
 ### Your first form (React)
