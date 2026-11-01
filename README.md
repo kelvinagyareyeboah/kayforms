@@ -1,7 +1,7 @@
 eld('', [minLength(8)]),
     <form onSubmit={form.handleSubmit}>
       <input {...form.email.bind} placeholder="Email" />
-      {form.email.error && <span className="error">{form.email.error}</span>}
+      {form.email.error && <span className="error">{fo/span>}
 
       <input {...form.password.bind} type="password" placeholder="Password" />
       {form.password.error && <span className="error">{form.password.error        Sign up
