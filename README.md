@@ -3,9 +3,7 @@ it}>
 > *"It's like a dashcam for yo
 This is the feature that makes KayForms genuinely di
 Every ke
-- ⏪ **Rewind 50 steps** in one click
-- 📤 **Export** the full timelin- 🔁 **Rebug your user sa
-
+- ⏪ **Rewind 50 steps** in 
 All of this in **le
 import { createForm, field, enableTimeTravel } from '@k
 function DebuggableForm() {
