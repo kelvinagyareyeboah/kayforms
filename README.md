@@ -3,11 +3,7 @@ gth(8)]),
       <input {...form.email.bind} placeholder="Email" />
       {form.email.error && <span className="error"
       <input {...form.password.bind} type
-      {form.password.error && <span className="error">{form.   That's it. No `register()`. No `watch()`. No wr brain around conontrolled.
-
----
-
-## ⏳ Time Travel Debugging
+      {form.password.error && <span className="error">{form.   That's it. No `register()`. No `watch()`. No wr brain around cono## ⏳ Time Travel Debugging
 
 > *"It's like a dashcam for your forms."*
 
