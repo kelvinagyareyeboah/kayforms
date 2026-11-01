@@ -1,4 +1,4 @@
-gth(8)]),it={form.handleSubmit}>
+ndleSubmit}>
       <input {...form.email.bind} placeholder="Email" />
       {form.email.error && <span className="error"
       <input {...form.password.bind} type
