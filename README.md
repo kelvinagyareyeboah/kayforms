@@ -1,5 +1,4 @@
-tion SignupForm() {
-  const form = createForm({
+tion SignupForm() ({
     email:    field('', [required(), email()]),
     password: field('', [minLength(8)]),
   });
