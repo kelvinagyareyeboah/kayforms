@@ -1,7 +1,6 @@
  al
 <tr>
 <td>🏎️ 1000+ fie
-# Core (required)
 npm inst
 
 # Pick your framework
