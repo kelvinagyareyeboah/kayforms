@@ -1,7 +1,4 @@
-)
-
-```tsx
-import { createForm, field } from '@kayforms/react';
+)ield } from '@kayforms/react';
 import { required, email, minLength } fromfunction SignupForm() {
   const form = createForm({
     email:    field('', [required(), email()]),
