@@ -1,4 +1,4 @@
-tion SignupForm() ({
+{
     email:    field('', [required(), email()]),
     password: field('', [minLength(8)]),
   });
