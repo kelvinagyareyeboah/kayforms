@@ -4,9 +4,7 @@ ndleSubmit}>
 This is the feature that makes KayForms genuinely di
 Every ke
 - ⏪ **Rewind 50 steps** in one click
-- 📤 **Export** the full timeline as JSON
-- 📥 **Import** it on any machine
-- 🔁 **Replay** the exact bug your user sa
+- 📤 **Export** the full timelin- 🔁 **Replay** the exact bug your user sa
 
 All of this in **less than 1KB.**
 
