@@ -1,4 +1,4 @@
- align="center"><strong>&lt<td al
+strong>&lt<td al
 <tr>
 <td>🏎️ 1000+ fie
 # Core (required)
