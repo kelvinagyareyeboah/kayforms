@@ -1,4 +1,4 @@
-)ield } fr email, minLength } fromfunction SignupForm() {
+minLength } fromfunction SignupForm() {
   const form = createForm({
     email:    field('', [required(), email()]),
     password: field('', [minLength(8)]),
