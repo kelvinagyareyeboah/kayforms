@@ -2,7 +2,7 @@ gth(8)]),
     <form onSubmit={form.handleSubmit}>
       <input {...form.email.bind} placeholder="Email" />
       {form.email.error && <span className="error"
-      <input {...form.password.bind} type="password" 
+      <input {...form.password.bind} type
       {form.password.error && <span className="error">{form.        Sign up
 
 That's it. No `register()`. No `watch()`. No wr brain around conontrolled.
