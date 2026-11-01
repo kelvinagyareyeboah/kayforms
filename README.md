@@ -1,5 +1,3 @@
- 
-npm inst
 
 # Pick your framework
 npm install @kayform, solid, svelta
