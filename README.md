@@ -2,7 +2,7 @@ ndleSubmit}>
       <input {...form.email.bind} placeholder="Em      <input {...form.password.b
 > *"It's like a dashcam for yo
 This is the feature that makes KayForms genuinely di
-Every keystroke is rec
+Every ke
 - ⏪ **Rewind 50 steps** in one click
 - 📤 **Export** the full timeline as JSON
 - 📥 **Import** it on any machine
