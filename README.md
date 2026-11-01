@@ -5,9 +5,7 @@ npm install @kayfor
 
 ```tsx
 import { createForm, field } from '@kayforms/react';
-import { required, email, minLength } from '@kayforms/core';
-
-function SignupForm() {
+import { required, email, minLength } fromfunction SignupForm() {
   const form = createForm({
     email:    field('', [required(), email()]),
     password: field('', [minLength(8)]),
