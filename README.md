@@ -7,8 +7,7 @@ Every ke
 - 📤 **Export** the full timelin- 🔁 **Rebug your user sa
 
 All of this in **le
-import { createForm, field, enableTimeTravel } from '@kayforms/react';
-
+import { createForm, field, enableTimeTravel } from '@k
 function DebuggableForm() {
   const form = createForm({
     email:    field(''),
