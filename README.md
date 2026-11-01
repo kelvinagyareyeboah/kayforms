@@ -3,9 +3,7 @@ it}>
 > *"It's like a dashcam for yo
 This is the feature that makes KayForms
 Every ke
-- ⏪ **Rewind 50 stepsimport { createForm, field, enableTimeTravel } from '@k
-function DebuggableForm() {
-  const form = createForm({
+- ⏪ **Rewind 50 stepsimport { createForm, field, enableTimeTravel } f  const form = createForm({
     email:    field(''),
     password: field(''),
   });
