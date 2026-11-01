@@ -3,7 +3,7 @@ gth(8)]),
       <input {...form.email.bind} placeholder="Email" />
       {form.email.error && <span className="error"
       <input {...form.password.bind} type="password" placeholder="Password" />
-      {form.password.error && <span className="error">{form.password.error        Sign up
+      {form.password.error && <span className="error">{form.        Sign up
       </but
 }
 ```
