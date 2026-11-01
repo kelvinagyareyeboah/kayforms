@@ -5,7 +5,7 @@ gth(8)]),
       <input {...form.password.bind} type="password" 
       {form.password.error && <span className="error">{form.        Sign up
 
-That's it. No `register()`. No `watch()`. No wr brain around controlled vs uncontrolled.
+That's it. No `register()`. No `watch()`. No wr brain around conontrolled.
 
 ---
 
