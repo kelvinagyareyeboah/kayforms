@@ -1,4 +1,4 @@
-t</td<td align="center">❌</td>
+enter">❌</td>
 <td align="center">❌</td><td align="center"><strong>&lt<td al
 <tr>
 <td>🏎️ 1000+ fie
