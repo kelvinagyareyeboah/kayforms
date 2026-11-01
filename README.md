@@ -1,5 +1,4 @@
-
-### Your first form (React)
+)
 
 ```tsx
 import { createForm, field } from '@kayforms/react';
