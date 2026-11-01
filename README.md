@@ -1,9 +1,7 @@
 ndleSubmit}>
       <input {...form.email.bind} placeholder="Email" />
       {form.email.error && <span className="error"
-      <input {...form.password.bind} type
-      {form.password.error && <span className="error">{form.   That's it. No `register()`. No `watch()`. No wr brain around cono## ⏳ Time Travel Debugging
-
+      <input {...form.password.b
 > *"It's like a dashcam for your forms."*
 
 This is the feature that makes KayForms genuinely different.
