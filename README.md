@@ -3,9 +3,7 @@ ndleSubmit}>
 > *"It's like a dashcam for yo
 This is the feature that makes KayForms genuinely di
 Every keystroke is recorded.  
-Every validation error is timestamped.  
-Every async API call is logged.
-
+Every validation error i
 Then you can:
 
 - ⏪ **Rewind 50 steps** in one click
