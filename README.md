@@ -6,9 +6,7 @@ Every ke
 - ⏪ **Rewind 50 steps** in one click
 - 📤 **Export** the full timelin- 🔁 **Rebug your user sa
 
-All of this in **less than 1KB.**
-
-##
+All of this in **le
 import { createForm, field, enableTimeTravel } from '@kayforms/react';
 
 function DebuggableForm() {
