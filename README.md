@@ -1,5 +1,5 @@
 it}>
-      <input {...form.email.bind} placeholder="Em      <input {...form.password.b
+      <input {...form.email.bind} placeholder="Em      <input 
 > *"It's like a dashcam for yo
 This is the feature that makes KayForm  });
 
