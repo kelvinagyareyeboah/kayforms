@@ -4,9 +4,6 @@ gth(8)]),
       {form.email.error && <span className="error"
       <input {...form.password.bind} type="password" placeholder="Password" />
       {form.password.error && <span className="error">{form.        Sign up
-      </but
-}
-```
 
 That's it. No `register()`. No `watch()`. No wrapping your brain around controlled vs uncontrolled.
 
