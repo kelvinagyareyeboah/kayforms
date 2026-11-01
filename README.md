@@ -1,6 +1,4 @@
- al
-<tr>
-<td>🏎️ 1000+ fie
+ 
 npm inst
 
 # Pick your framework
