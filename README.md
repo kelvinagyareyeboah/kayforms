@@ -1,7 +1,5 @@
 ndleSubmit}>
-      <input {...form.email.bind} placeholder="Email" />
-      {form.email.error && <span className="error"
-      <input {...form.password.b
+      <input {...form.email.bind} placeholder="Em      <input {...form.password.b
 > *"It's like a dashcam for yo
 This is the feature that makes KayForms genuinely di
 Every keystroke is recorded.  
