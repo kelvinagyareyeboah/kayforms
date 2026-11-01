@@ -5,9 +5,7 @@ gth(8)]),
 
       <input {...form.password.bind} type="password" placeholder="Password" />
       {form.password.error && <span className="error">{form.password.error        Sign up
-      </button>
-    </form>
-  );
+      </but
 }
 ```
 
