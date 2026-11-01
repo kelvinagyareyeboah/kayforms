@@ -3,7 +3,7 @@ t</td<td align="center">❌</td>
 <tr>
 <td>🏎️ 1000+ fie
 # Core (required)
-npm install @kayforms/core
+npm inst
 
 # Pick your framework
 npm install @kayform, solid, svelta
