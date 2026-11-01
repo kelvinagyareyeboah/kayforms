@@ -4,10 +4,7 @@ eld('', [minLength(8)]),
       {form.email.error && <span className="error">{form.email.error}</span>}
 
       <input {...form.password.bind} type="password" placeholder="Password" />
-      {form.password.error && <span className="error">{form.password.error}</span>}
-
-      <button type="submit" disabled={!form.isValid()}>
-        Sign up
+      {form.password.error && <span className="error">{form.password.error        Sign up
       </button>
     </form>
   );
