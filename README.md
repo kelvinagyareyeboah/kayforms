@@ -3,10 +3,7 @@ ndleSubmit}>
       {form.email.error && <span className="error"
       <input {...form.password.b
 > *"It's like a dashcam for yo
-This is the feature that makes KayForms genuinely different.
-
-### Wha
-
+This is the feature that makes KayForms genuinely di
 Every keystroke is recorded.  
 Every validation error is timestamped.  
 Every async API call is logged.
