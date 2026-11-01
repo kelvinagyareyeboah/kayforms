@@ -6,8 +6,6 @@ This is the feature that makes KayForm  });
   enableTimeTravel(form, { maxHistory: 100 });
 
   return (
-    <div>
-      <form onSubmit={form.handleSubmit}>
         <input {...form.email.bind} placeholder="Email" />
         <input {...form.password.bind} type="password" placeholder="Password" />
         <button type="submit">Submit</button>
