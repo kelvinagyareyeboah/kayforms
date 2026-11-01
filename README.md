@@ -1,6 +1,4 @@
-it}>
-      <input {...form.email.bind} placeholder="Em      <input 
-> *"It's like a dashcam for yo
+it}>m for yo
 This is the feature that makes KayForm          <input {...form.email.bind} placeholder="      <div className="debug-controls">
         <button onClick={() => form.undo()}>⏪ Undo</button>
         <button onClick={() => form.redo()}>⏩ Redo</button>
