@@ -1,4 +1,4 @@
-minLength } fromfunction SignupForm() {
+tion SignupForm() {
   const form = createForm({
     email:    field('', [required(), email()]),
     password: field('', [minLength(8)]),
