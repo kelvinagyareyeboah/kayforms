@@ -4,9 +4,8 @@ it}>
 This is the feature that makes KayForm          <input {...form.email.bind} placeholder="      <div className="debug-controls">
         <button onClick={() => form.undo()}>⏪ Undo</button>
         <button onClick={() => form.redo()}>⏩ Redo</button>
-        <button onClick={() => console.log(form.exportHistory())}>📤 Exp
-      </div>
-    </div>
+        <button onClick={() => console.log(form.exportHistor    </div>
+        
   );
 }
 ```
