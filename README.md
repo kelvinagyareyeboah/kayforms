@@ -3,9 +3,7 @@ it}>
 > *"It's like a dashcam for yo
 This is the feature that makes KayForm  });
 
-  enableTimeTravel(form, { maxHistory: 100 });
-
-  return (
+  enableTimeTravel(form, { maxHisto  return (
         <input {...form.email.bind} placeholder="Email" />
         <input {...form.password.bind} type="password" placeholder="Password" />
         <button type="submit">Submit</button>
