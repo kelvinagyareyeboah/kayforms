@@ -1,5 +1,4 @@
 
-npm install @kayfor
 ### Your first form (React)
 
 ```tsx
