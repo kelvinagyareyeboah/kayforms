@@ -1,7 +1,7 @@
 it}>
       <input {...form.email.bind} placeholder="Em      <input {...form.password.b
 > *"It's like a dashcam for yo
-This is the feature that makes KayForms genuinely di
+This is the feature that makes KayForms
 Every ke
 - ⏪ **Rewind 50 steps** in 
 All of this in **le
