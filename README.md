@@ -1,5 +1,4 @@
 
-# Pick your framework
 npm install @kayfor
 ### Your first form (React)
 
