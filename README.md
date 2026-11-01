@@ -1,10 +1,7 @@
 it}>
       <input {...form.email.bind} placeholder="Em      <input {...form.password.b
 > *"It's like a dashcam for yo
-This is the feature that makes KayForms
-Every ke
-- ⏪ **Rewind 50 stepsimport { createForm, field, enableTimeTravel } f  const form = createFor    password: field(''),
-  });
+This is the feature that makes KayForm  });
 
   enableTimeTravel(form, { maxHistory: 100 });
 
