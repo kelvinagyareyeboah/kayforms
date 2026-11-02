@@ -1,5 +1,4 @@
-
-fo       
+       
 form.isValid()             // → boolean
 form.subscribe(callback)   // → unsubscribe function
 ```
