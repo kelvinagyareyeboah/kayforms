@@ -1,10 +1,6 @@
 
 ```
 
----
-
-## 🚀 Performance
-
 > Benchmarked on MacBook Pro M1 · Chrome 120 · 10 runs averaged
 
 | Fields  | KayForms   | React Hook Form | | 100     | **60fps**  | 58fps           | 42fps    |
