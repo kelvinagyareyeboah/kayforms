@@ -3,9 +3,7 @@
 |*  | 52fps           | 28fps    |
 | 1, signal.
 
-Open source. PRs welcome. 
-```bash
-git clone https://github.com/kelvinagyarey
+Open source. PRgit clone https://github.com/kelvinagyarey
 npm run dev    # start dev server
 npm run test   # run test suite
 ```
