@@ -3,9 +3,7 @@ const form = createForm({
   username: field('',  [required()]),
   email:    field('',  [required(), email()]),
   password: field('',  [required(), minLength(8), maxLength(100)]),
-  confirm:  field('',  [match('password')]),
-});
-```
+  confirm:  field('', ```
 
 ### Custom Async Validators
 
