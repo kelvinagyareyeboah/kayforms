@@ -1,5 +1,3 @@
-(callback)   // → unsubscribe function
-```
 
 ```typescript
 enableTimeTravel(form, { maxHisform.undo()                // step back
