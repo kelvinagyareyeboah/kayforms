@@ -1,7 +1,5 @@
 
 c
-No more "I can't reproduce it." No more
-
 
 | ⚛️ React   | `@kayforms/react`     | ✅ Stable   |
 | 💚 Vue     | `@kayforms/vue`       | ✅ Stable   |
