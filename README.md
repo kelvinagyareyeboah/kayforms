@@ -1,6 +1,4 @@
-eForm({
-  uld('',  [required(), email()]),
-  password: field('',  [required(), minLength(8), maxLength(100)]),
+eFo'',  [required(), minLength(8), maxLength(100)]),
   confirm:  field('', ```
 
 ### Custom Async Validators
