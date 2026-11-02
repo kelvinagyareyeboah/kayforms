@@ -1,6 +1,5 @@
 /vue`       | ✅ Stable   |
-| 🔥 Solid   | `@kayforms/solid`     | ✅ Stable   |
-| 🔶 Svelte  | `@kayforms/svelte`    | ✅ Sta| 🟨 Vanilla | `@kayforms/vanilla` npm install @kayforms/core     
+| 🔥 Solid   |/svelte`    | ✅ Sta| 🟨 Vanilla | `@kayforms/vanilla` npm install @kayforms/core     
 npm install @kayforms/[framework]   # Your choice
 npm install @kayforms/devtools      # Optional Chrome DevTools 
 ### `createForm`
