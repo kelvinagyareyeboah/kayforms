@@ -5,7 +5,7 @@ th(100)]),
 
 ```typescript
 const uniqueUsername = async (value: string) => {
-  const res = await fetch(`/api/users/check/${value}`);
+  const res = await fetch(`/api/user
   const { exists } = await res.json();
   return exists ? 'Username is already taken' : null;
 };
