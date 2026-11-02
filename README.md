@@ -3,9 +3,7 @@ ev server
 npm run test   # run test suite
 `
 
-- 🐛 **Found a bug?** Export your timeline JSON and [open an issue](http) — we can replay it exactly
-- 💡 **Have an idea?** Open a d
-- 📝 **Docs unclear?** PRs for docs are always welcome, no issue needed
+- 🐛 **Found a bug?** Export your timeline JSON and [open an issue](http) — we can- 📝 **Docs unclear?** PRs for docs are always welcome, no issue needed
 - ⭐ **Just want to help?** Star the repo — it matter
 MIT © [Kelvin Agyare-Yeboah](https://github.com/kelvinagyareyeboah)
 
