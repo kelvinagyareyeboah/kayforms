@@ -1,5 +1,3 @@
-th(100)]),
-  codators
 
 ```typescript
 const uniqueUsername = async (value: string) => {
