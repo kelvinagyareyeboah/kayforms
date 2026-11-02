@@ -7,10 +7,6 @@
 
 KayForms uses a fine-grained signal architecture — only the exact field that changed re-renders. Nothing else. Not the parent. Not the siblings. Just the signal.
 
----
-
-## 🤝 Contributing
-
 Open source. PRs welcome. Here's how to jump in.
 
 ### Setup
