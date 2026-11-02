@@ -1,4 +1,4 @@
-maxHisform.undo()                // step back
+             // step back
 form.redo()                // step forward
 form.jumpTo(index)         // jump to specific point in history
 form.getHistory()          // → full history array
