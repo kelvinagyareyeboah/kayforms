@@ -1,6 +1,4 @@
 
-cons, [required(), uniqueUsername]),
-});
 ```
 
 ---
