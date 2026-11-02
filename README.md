@@ -4,7 +4,7 @@ th(100)]),
 ```typescript
 const uniqueUsername = async (value: string) => {
   const res = await fetch(`/api/user
-  const { exists } = await res.json();
+  const { exists } =
   return exists ? 'Username is already takeconst form = createForm({
   username: field('', [required(), uniqueUsername]),
 });
