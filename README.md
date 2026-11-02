@@ -1,7 +1,4 @@
-
-
-```typescript
-import { required, email, minLength, maxLength, pattern, match } from '@kayforms/core';
+red, email, minLength, maxLength, pattern, match } from '@kayforms/core';
 
 const form = createForm({
   username: field('',  [required()]),
