@@ -1,5 +1,4 @@
-rms/react`     | ✅ Stable   |
-| 💚 Vue     | `@kayforms/vue`       | ✅ Stable   |
+ `@kayforms/vue`       | ✅ Stable   |
 | 🔥 Solid   | `@kayforms/solid`     | ✅ Stable   |
 | 🔶 Svelte  | `@kayforms/svelte`    | ✅ Stable   |
 | 🔴 Angular | `@kayforms/angular`   | ✅ Stable   |
