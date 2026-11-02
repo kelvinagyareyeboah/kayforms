@@ -1,5 +1,4 @@
-yforms/devtools      # Optional Chrome DevTools 
-### `createForm`
+
 
 ```typescript
 import { createForm, field, fieldGroup, fieldArray } from 'const form = createForm(schema, options);
