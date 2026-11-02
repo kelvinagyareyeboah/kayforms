@@ -1,7 +1,5 @@
 
-
-Open source. PRgit clone https://github.com/kelvinagyarey
-npm run dev    # start dev server
+ev server
 npm run test   # run test suite
 ```
 
