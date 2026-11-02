@@ -5,8 +5,7 @@
 
 Open source. PRs welcome. 
 ```bash
-git clone https://github.com/kelvinagyareyeboah/
-npm install
+git clone https://github.com/kelvinagyarey
 npm run dev    # start dev server
 npm run test   # run test suite
 ```
