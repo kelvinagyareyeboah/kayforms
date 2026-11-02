@@ -1,7 +1,4 @@
-
-ev server
-npm run test   - 🐛 **Found a bug?** Export your timeline JSON and [open an issue](http) — we can- 📝 **Docs unclear?** PRs for docs are al
-- ⭐ **Just want to help?** Star t
+to help?** Star t
 MIT © [Kelvin Agyare-Yeboah](https:/
 Use it. Modify it. Ship it.
 
