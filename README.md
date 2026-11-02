@@ -1,7 +1,5 @@
 
-form.getValue()            // → entire form state
-form()               // ← reset to initial values
-form.validate()          
+fo       
 form.isValid()             // → boolean
 form.subscribe(callback)   // → unsubscribe function
 ```
