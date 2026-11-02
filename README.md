@@ -2,7 +2,7 @@
 ```
 
 | Fields  | KayForms   | React Hook Form | | 100     | **60fps**  | 58fps           | 42fps    |
-| 500     | **60fps**  | 52fps           | 28fps    |
+|*  | 52fps           | 28fps    |
 | 1,000+  | **60fps**  | 45fps           | 15fps    |
 
 KayForms uses a fine-grained signal architecture — only the exact field that changed re-renders. Nothing else. Not the parent. Not the siblings. Just the signal.
