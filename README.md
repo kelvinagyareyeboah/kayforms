@@ -4,10 +4,7 @@ makes KayForm          <input {...form.email.bind} placeholder="      <div class
         <button onClick={() => console.lo// Attach this JSON to your GitHub issue and we can replay it exactly
 const timeline = form.e
 c
-No more "I can't reproduce it." No more gue
-
-## 📦 Fram
-KayForms runs any
+No more "I can't reproduce it." No more
 
 | Framework  | Package               | Status      |
 |------------|-----------------------|-------------|
