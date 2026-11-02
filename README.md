@@ -7,8 +7,7 @@ c
 No more "I can't reproduce it." No more gue
 
 ## 📦 Fram
-
-KayForms runs anywhere JavaScript runs.
+KayForms runs any
 
 | Framework  | Package               | Status      |
 |------------|-----------------------|-------------|
