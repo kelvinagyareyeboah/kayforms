@@ -2,7 +2,7 @@
 | 🔥 Solid   | `@kayforms/solid`     | ✅ Stable   |
 | 🔶 Svelte  | `@kayforms/svelte`    | ✅ Stable   |
 | 🔴 Angular | `@kayforms/angular`   | ✅ Stable   |
-| 🟨 Vanilla | `@kayforms/vanilla` npm install @kayforms/core          # Always required
+| 🟨 Vanilla | `@kayforms/vanilla` npm install @kayforms/core     
 npm install @kayforms/[framework]   # Your choice
 npm install @kayforms/devtools      # Optional Chrome DevTools panel
 ```
