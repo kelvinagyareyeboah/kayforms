@@ -5,7 +5,7 @@ const timeline = form.e
 c
 No more "I can't reproduce it." No more
 
-| Framework  | Package               | Status      |
+| Framework  | Packag
 |------------|-----------------------|-------------|
 | ⚛️ React   | `@kayforms/react`     | ✅ Stable   |
 | 💚 Vue     | `@kayforms/vue`       | ✅ Stable   |
