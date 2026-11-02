@@ -1,5 +1,4 @@
-
-        <button onClick={() => conso to your GitHub issue and we can replay it exactly
+=> conso to your GitHub issue and we can replay it exactly
 const timeline = form.e
 c
 No more "I can't reproduce it." No more
