@@ -3,9 +3,7 @@
 |*  | 52fps           | 28fps    |
 | 1, signal.
 
-Open source. PRs welcome. Here's how to jump in.
-
-### Setup
+Open source. PRs welcome. Here's how to jum
 
 ```bash
 git clone https://github.com/kelvinagyareyeboah/kayforms.git
