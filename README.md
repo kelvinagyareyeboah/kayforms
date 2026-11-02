@@ -1,5 +1,4 @@
-  // → full histor// wipe the timeline
-form.exportHistory()       // → JSON string
+  // → JSON string
 form.importHistory(json)   // ← load from JSON
 ```
 
