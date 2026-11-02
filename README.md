@@ -8,10 +8,7 @@ No more "I can't reproduce it." No more
 | 🔥 Solid   | `@kayforms/solid`     | ✅ Stable   |
 | 🔶 Svelte  | `@kayforms/svelte`    | ✅ Stable   |
 | 🔴 Angular | `@kayforms/angular`   | ✅ Stable   |
-| 🟨 Vanilla | `@kayforms/vanilla`   | ✅ Stable   |
-
-```bash
-npm install @kayforms/core          # Always required
+| 🟨 Vanilla | `@kayforms/vanilla` npm install @kayforms/core          # Always required
 npm install @kayforms/[framework]   # Your choice
 npm install @kayforms/devtools      # Optional Chrome DevTools panel
 ```
