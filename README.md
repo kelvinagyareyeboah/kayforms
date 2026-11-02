@@ -1,5 +1,4 @@
 
-```typescript
 const uniqueUsername = async (value: string) => {
   const res = await fetch(`/api/user
   const { exists } =
