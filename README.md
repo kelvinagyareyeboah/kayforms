@@ -9,10 +9,7 @@ cons, [required(), uniqueUsername]),
 
 > Benchmarked on MacBook Pro M1 · Chrome 120 · 10 runs averaged
 
-| Fields  | KayForms   | React Hook Form | Formik   |
-|---------|------------|-----------------|----------|
-| 10      | **60fps**  | 60fps           | 55fps    |
-| 100     | **60fps**  | 58fps           | 42fps    |
+| Fields  | KayForms   | React Hook Form | | 100     | **60fps**  | 58fps           | 42fps    |
 | 500     | **60fps**  | 52fps           | 28fps    |
 | 1,000+  | **60fps**  | 45fps           | 15fps    |
 
