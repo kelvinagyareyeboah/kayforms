@@ -3,8 +3,7 @@ makes KayForm          <input {...form.email.bind} placeholder="      <div class
         <button onClick={() => form.redo()}>⏩ Redo</button>
         <button onClick={() => console.lo// Attach this JSON to your GitHub issue and we can replay it exactly
 const timeline = form.e
-console.log(JSON.stringify(timel
-```
+console.log(JSON.s
 
 No more "I can't reproduce it." No more guessing. Just facts.
 
