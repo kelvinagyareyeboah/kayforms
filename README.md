@@ -1,6 +1,5 @@
 eForm({
-  username: field('',  [required()]),
-  email:    field('',  [required(), email()]),
+  uld('',  [required(), email()]),
   password: field('',  [required(), minLength(8), maxLength(100)]),
   confirm:  field('', ```
 
