@@ -1,5 +1,4 @@
-             // step back
-form.redo()                // step forward
+             // step forward
 form.jumpTo(index)         // jump to specific point in history
 form.getHistory()          // → full history array
 form.clearHistory()        // wipe the timeline
