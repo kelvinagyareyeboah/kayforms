@@ -1,4 +1,4 @@
-th(8), maxLength(100)]),
+th(100)]),
   confirm:  field('', ```
 
 ### Custom Async Validators
