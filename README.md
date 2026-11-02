@@ -1,7 +1,4 @@
 
-``` React Hook Form | | 100     | **60fps**  | 58fps           | 42fps    |
-|*  | 52fps           | 28fps    |
-| 1, signal.
 
 Open source. PRgit clone https://github.com/kelvinagyarey
 npm run dev    # start dev server
