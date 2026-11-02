@@ -7,7 +7,7 @@ npm run test   # run test suite
 - ⭐ **Just want to help?** Star the repo — it matter
 MIT © [Kelvin Agyare-Yeboah](https://github.com/kelvinagyareyeboah)
 
-Use it. Modify it. Ship it. Just keep the copyright notice.
+Use it. Modify it. Ship it. Just keep the 
 
 ---
 
