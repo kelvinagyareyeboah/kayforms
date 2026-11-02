@@ -1,6 +1,4 @@
-       
-form.isValid()             // → boolean
-form.subscribe(callback)   // → unsubscribe function
+(callback)   // → unsubscribe function
 ```
 
 ### Time Travel
