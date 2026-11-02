@@ -5,8 +5,7 @@
 
 Open source. PRs welcome. 
 ```bash
-git clone https://github.com/kelvinagyareyeboah/kayforms.git
-cd kayforms
+git clone https://github.com/kelvinagyareyeboah/
 npm install
 npm run dev    # start dev server
 npm run test   # run test suite
