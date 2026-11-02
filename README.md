@@ -8,7 +8,7 @@ No more "I can't reproduce it." No more guessing. Just facts.
 
 ---
 
-## 📦 Framework Support
+## 📦 Fram
 
 KayForms runs anywhere JavaScript runs.
 
