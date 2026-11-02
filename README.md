@@ -1,7 +1,4 @@
 
-  
-
-### Built-in Validators
 
 ```typescript
 import { required, email, minLength, maxLength, pattern, match } from '@kayforms/core';
