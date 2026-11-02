@@ -1,4 +1,4 @@
-eFo'',  [required(), minLength(8), maxLength(100)]),
+th(8), maxLength(100)]),
   confirm:  field('', ```
 
 ### Custom Async Validators
