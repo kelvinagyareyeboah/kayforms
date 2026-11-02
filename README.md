@@ -1,8 +1,6 @@
 (callback)   // → unsubscribe function
 ```
 
-### Time Travel
-
 ```typescript
 enableTimeTravel(form, { maxHistory: 100 });
 
