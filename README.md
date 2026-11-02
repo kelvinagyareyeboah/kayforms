@@ -1,6 +1,5 @@
 
-```typescript
-enableTimeTravel(form, { maxHisform.undo()                // step back
+```typesravel(form, { maxHisform.undo()                // step back
 form.redo()                // step forward
 form.jumpTo(index)         // jump to specific point in history
 form.getHistory()          // → full history array
