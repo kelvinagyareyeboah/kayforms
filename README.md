@@ -6,11 +6,7 @@ npm run test   # run test suite
 - 🐛 **Found a bug?** Export your timeline JSON and [open an issue](http) — we can replay it exactly
 - 💡 **Have an idea?** Open a discussion before a PR so we can align first
 - 📝 **Docs unclear?** PRs for docs are always welcome, no issue needed
-- ⭐ **Just want to help?** Star the repo — it matters more than you'd think
-
----
-
-## 📄 License
+- ⭐ **Just want to help?** Star the repo — it matters more than you'd 
 
 MIT © [Kelvin Agyare-Yeboah](https://github.com/kelvinagyareyeboah)
 
