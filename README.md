@@ -1,5 +1,4 @@
-
-const form = createForm({
+eForm({
   username: field('',  [required()]),
   email:    field('',  [required(), email()]),
   password: field('',  [required(), minLength(8), maxLength(100)]),
