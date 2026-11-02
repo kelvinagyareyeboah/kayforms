@@ -1,5 +1,4 @@
-.email.bind} placeholder="      <div className="debug-controls">
-        <button onClick={() => form.undo()}>⏪ Undo</button>
+.email.bind} p> form.undo()}>⏪ Undo</button>
         <button onClick={() => form.redo()}>⏩ Redo</button>
         <button onClick={() => console.lo// Attach this JSON to your GitHub issue and we can replay it exactly
 const timeline = form.e
