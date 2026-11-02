@@ -1,8 +1,5 @@
 
- Agyare-Yeboahit.
-
-<div align="center">
-
+ Agyare-Y
 **Built for developers tired of fighting their form library.**
 
 If KayForms made your life easier, [give it a star](https://github.com/kelvinagyareyeboah/kayforms/stargazers) ⭐
