@@ -1,9 +1,7 @@
 
 ev server
 npm run test   # run test suite
-```
-
-### Ways to help
+`
 
 - 🐛 **Found a bug?** Export your timeline JSON and [open an issue](https://github.com/kelvinagyareyeboah/kayforms/issues) — we can replay it exactly
 - 💡 **Have an idea?** Open a discussion before a PR so we can align first
