@@ -7,10 +7,7 @@ th(100)]),
 const uniqueUsername = async (value: string) => {
   const res = await fetch(`/api/user
   const { exists } = await res.json();
-  return exists ? 'Username is already taken' : null;
-};
-
-const form = createForm({
+  return exists ? 'Username is already takeconst form = createForm({
   username: field('', [required(), uniqueUsername]),
 });
 ```
