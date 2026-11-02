@@ -3,8 +3,7 @@
 |*  | 52fps           | 28fps    |
 | 1, signal.
 
-Open source. PRs welcome. Here's how to jum
-
+Open source. PRs welcome. 
 ```bash
 git clone https://github.com/kelvinagyareyeboah/kayforms.git
 cd kayforms
