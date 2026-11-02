@@ -1,6 +1,6 @@
 .email.bind} p> form.undo()}>⏪ Undo</button>
         <button onClick={() => form.redo()}>⏩ Redo</button>
-        <button onClick={() => console.lo// Attach this JSON to your GitHub issue and we can replay it exactly
+        <button onClick={() => conso to your GitHub issue and we can replay it exactly
 const timeline = form.e
 c
 No more "I can't reproduce it." No more
