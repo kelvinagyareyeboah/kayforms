@@ -1,7 +1,5 @@
 
-```
-
-| Fields  | KayForms   | React Hook Form | | 100     | **60fps**  | 58fps           | 42fps    |
+``` React Hook Form | | 100     | **60fps**  | 58fps           | 42fps    |
 |*  | 52fps           | 28fps    |
 | 1,000+  | **60fps**  | 45fps           | 15fps    |
 
