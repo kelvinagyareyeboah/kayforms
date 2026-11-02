@@ -1,6 +1,5 @@
-  // → JSON string
-form.importHistory(json)   // ← load from JSON
-```
+
+  
 
 ### Built-in Validators
 
