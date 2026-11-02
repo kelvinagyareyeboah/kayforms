@@ -1,8 +1,7 @@
 
 
 ```typescript
-import { createForm, field, fieldGroup, fieldArray } from 'const form = createForm(schema, options);
-
+import { c
 form.getValue()            // → entire form state
 form.setValue(data)        // ← set entire form state
 form.reset()               // ← reset to initial values
