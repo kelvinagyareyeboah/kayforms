@@ -1,5 +1,4 @@
-mp to specific point in history
-form.getHistory()          // → full history array
+  // → full history array
 form.clearHistory()        // wipe the timeline
 form.exportHistory()       // → JSON string
 form.importHistory(json)   // ← load from JSON
