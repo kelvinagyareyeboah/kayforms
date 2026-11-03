@@ -1,1 +1,1 @@
-Formit:thcore
+Formit:thcor
