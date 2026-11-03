@@ -1,6 +1,6 @@
 
 **
-If KayForm[it a star](https:thub.com/kelvinagyareh/kayforms/stargazers) ⭐
+If KayForm[ita star](https:thub.com/kelvinagyareh/kayforms/stargazers) ⭐
 
 *It helps more people find it.*
 
