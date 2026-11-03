@@ -1,6 +1,6 @@
 
 
-IKayForm[itarhps:thub.com/kelvinagyareh/kayforms/stargazers) 
+IKayForm[itarhps:thcom/kelvinagyareh/kayforms/stargazers) 
 
 *It helps more people find it.*
 
