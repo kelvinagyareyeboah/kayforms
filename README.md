@@ -1,3 +1,3 @@
 Formit:thcoelgyareh/kayforms/stargaz
-*It helps refind i
+*It helps refind
 </div>
