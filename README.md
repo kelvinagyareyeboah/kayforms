@@ -1,5 +1,5 @@
 
-**Built foeled of fighting their fo
+**Built fod of fighting their fo
 If KayFormsde your life easier, [give it a star](https://github.com/kelvinagyareyeboah/kayforms/stargazers) ⭐
 
 *It helps more people find it.*
