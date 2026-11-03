@@ -1,6 +1,6 @@
 
 
-**Built foelopers tired of fighting their form.**
+**Built foelrs tired of fighting their form.**
 
 If KayForms made your life easier, [give it a star](https://github.com/kelvinagyareyeboah/kayforms/stargazers) ⭐
 
