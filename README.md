@@ -1,4 +1,4 @@
-Form[itaps:thcom/kelvinagyareh/kayforms/stargazers) 
+Form[itaps:thcom/kelvinagyareh/kayforms/stargazer
 
 *It helps more people find it.*
 
