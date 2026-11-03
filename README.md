@@ -1,2 +1,2 @@
-Formit:thcoreh/kayforms/
+Formit:thcoreh/kayform
 </di
