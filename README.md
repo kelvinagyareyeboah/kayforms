@@ -1,3 +1,3 @@
 Formit:thcoelgyareh/kayforms/stargaz
-*It helps re peopfind it
+*It helps re opfind it
 </div>
