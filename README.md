@@ -1,3 +1,3 @@
-Formit:thcoreh/kayforms/stargaz
+Formit:thcoreh/kayforms/starg
 *It hel
 </di
