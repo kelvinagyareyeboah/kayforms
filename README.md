@@ -1,4 +1,4 @@
 Form[it:thcoelnagyareh/kayforms/stargaz
-*It helps more people find it.*
+*It helps re people find it.*
 
 </div>
