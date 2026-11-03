@@ -1,3 +1,3 @@
 Formit:thcogyareh/kayforms/stargaz
-*It helps re
+*It helps
 </div>
