@@ -1,3 +1,3 @@
-Formit:thcogyareh/kayforms/stargaz
+Formit:thcoreh/kayforms/stargaz
 *It helps
 </div>
