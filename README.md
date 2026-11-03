@@ -1,4 +1,4 @@
-Form[ita:thcom/kelvinagyareh/kayforms/stargazer
+Form[it:thcom/kelvinagyareh/kayforms/stargazer
 
 *It helps more people find it.*
 
