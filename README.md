@@ -1,5 +1,5 @@
 
-**Built fodig their fo
+**Built foig their fo
 If KayFormsier, [give it a star](https://github.com/kelvinagyareyeboah/kayforms/stargazers) ⭐
 
 *It helps more people find it.*
