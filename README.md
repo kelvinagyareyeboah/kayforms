@@ -1,3 +1,3 @@
 Form[it:thcoelgyareh/kayforms/stargaz
-*It helps re people find it
+*It helps re peopfind it
 </div>
